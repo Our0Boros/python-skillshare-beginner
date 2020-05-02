@@ -1,0 +1,861 @@
+Python Commands and Methods
+-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+
+Method	/	Command			|			Example
+------------------------------------------------------
+String concatenation		|	print("Hi " + first_name)
+							|
+The title method			|	str = "hello world".title()	||	print(str.title())
+							|
+The find method				|	my_book = "My favorite book is 'Elon Mask'.".find('Elon')		
+							|
+The lower / upper method	|	name = "OMER GODER".lower()  || name = "omer goder".upper()
+							|
+The replace method			|	my_book = "My favorite book is 'Elom Musk'.".replace('Elom','Elon')
+							|
+The strip method			|	address = "		102 Main Street   ".strip()||rstrip()||lstrip	
+							|
+Adding whitespace			|	"\t" - adds a tab	||	"\n" - add a new line
+							|
+Numbers to String (casting)	|	str(int_var_name)
+							|
+Comments					|	#This is a comment
+							|
+List						|	months = ['january','february','march','april']
+							|
+List - change element		|	months[3] = 'november'
+							|
+List - Append				|	months.append('may')
+							|
+List - Insert				|	months.insert(0,'december')
+							|
+List - Delete				|	del months[1]
+							|
+The Pop method				|	popped_subscribers = subscribers.pop()
+							|
+The Remove method			|	subscribers.remove('tom@example.com')
+							|
+List - Sorting				|	months.sort()
+							|
+List - Sorting(reverse)		|	months.sort(reverse=True)
+							|
+List - Sorted				|	print(sorted(months))
+							|
+List - Reverse				|	months.reverse()
+							|
+List - Length				|	print(len(list))
+							|
+List - For Loop				|	for month in months: \\(CR LF - indent)	print(month)
+							|
+The Range function			|	for value in range(1,5):	\\(CR LF - indent)	print(value)
+							|
+Minimum|Maximum function	|	print(max(numbers))
+							|
+Sum function				|	print(sum(numbers))
+							|
+Slicing a List				|	print(names[1:3])
+							|
+Looping through a slice		|	for name in names[:3]:	\\(CR LF - indent)	print(name.title())
+							|
+Copying a List				|	first_names = names[:]
+							|
+Input statement				|	welcome = input("Hi, what's your name? ")
+							|
+If statements				|	if age >= 18:	\\(CR LF - indent)	print("You can vote!")
+							|
+List - Check Item Existence	|	if name in registered_names:	\\\\(CR LF - indent)	print("This name is already taken.")
+							|
+List - Is Empty?			|	if cart:	#return False if empty	||	if not cart:	#return True if Empty 
+							|
+Dictionary					|	prod_1 = {'product' : 'carrot' , 'price' : 10}
+							|
+Dictionary - Adding Key		|	prod_1['color'] = 'orange'
+							|
+Dictionary - get method		|	print(prod_1.get('texture', 'not in the dictionary'))
+							|
+Dictionary - items method	|	print(book_1.items())
+							|
+Dictionary - keys method	|	print(birthday_months.keys())
+							|
+Dictionary - values method	|	print(birthday_months.values())
+							|
+Dictionaries in a List		|	books = [book_0, book_1, book_2]
+							|
+Set							|	set_1 = {"apple" , "banana" , "cherry" , "apple"} # Only one 'apple' will b included
+							|
+Set - Check Value			|	print("cherry" in set_1)
+							|
+Set - Add method			|	set_1.add('mango')
+							|
+Set - Update method			|	set_1.update('orange','mango','grapes'])
+							|
+Set - Union method			|	set3 = set1.union(set2)
+							|
+Set - Remove method			|	set_1.remove('banana')
+							|
+Set - Discard method		|	set_1.discard('kiwi')
+							|
+Set - Clear method			|	set_1.clear()
+							|
+Set - the Set Constructor	|	set_1 = set(('apple','microsoft','google'))	||	set_1 = set(list_1)
+							|
+While Loop					|	while True: (CR LF - indent)	number += 1
+							|
+break, continue, and pass	|	if (num == 5):	(CR LF - indent)	break
+
+
+
+
+
+var_name = "String"
+print(var_name)
+
+python does not differ from double (") and single (') quotes
+* if we want to use double or single quotes within a string we can put backslash (\) in front of it
+	for example: str='what film is this? \'show me the money\' '
+	will display: what film is this? 'show me the money'
+
+
+String concatenation - link a series of strings
+* while using the print command we will add a "+" sign between variable name and quotes
+	for example: print("Hi " + first_name)
+
+
+The title method
+- the title method allows us to capitelize the first letter in every word in a sentence
+*	syntex: .title()
+**	use after writing the string | or after the var_name in the print
+
+	example_1:	str = "hello world".title()
+				print(str)
+				
+	example_2:	str="hello world"
+				print(str.title())
+				
+	both of those examples will print: Hello World
+
+
+The find method
+-	the find method allows us to find the position of which a certain word or a char is, within a string
+-	this method can be used as a filter for finding certain phrases
+*	note, the position starts at [0] and not [1]
+*	syntex: .find()
+
+	example_1:	my_book = "My favorite book is 'Elon Mask'.".find('Elon')
+				print(my_book)
+	
+	will print "21" (the position of 'Elon' in the string)
+	
+	example_2:	subject = "$$$ Get Rich Now $$$".find('$$$')
+				print(subject)
+	
+	will print "0" (the first position of '$$$'
+
+
+The lower / upper method
+-	the lower method will lowercase an entire string
+
+	example:	name = "OMER GODER".lower()  || name = "omer goder".upper()
+				print(name)
+				
+	will print:	omer goder					 || OMER GODER
+
+The replace method
+-	the replace method allows us to replace a word within a string
+
+*	example:	my_book = "My favorite book is 'Elom Musk'.".replace('Elom','Elon')
+				print(my_book)
+	will print:	My favorite book is 'Elon Musk'
+	
+
+The strip method
+-	the strip method allows us to remove/strip all whitespace at the sides of a string
+*	syntex:	.strip()	||	.rstrip()	||	.lstrip()
+**			(both sides)||	(right side)||	(left side)
+
+	example_1:	address_2 = "		102 Main Street   "
+				print(address_2.strip())
+				
+	example_2:	address_2 = "		102 Main Street   ".strip()
+				print(address_2)
+				
+	will print:	"102 Main Street" - without any whitespace
+	
+	
+Adding Whitespace
+-	we can write within a string 
+	*	\t - to add a tab
+	*	\n - to add a new line
+
+
+Numbers to String (Casting)
+-	casting allows us to "covert" integer number into a string so it can be printed in a sentence
+*	syntex: str(int_var_name)
+
+	example:
+	welcome_message = "Hi " + name + "\nWelcome back, today's date is the " + str(date_today) + " of October."
+
+
+List
+-	a list compiles of a number of items
+*	syntex:	list_1 = ['item_1','item_2','item_3',...]
+**	a list can be printed as a list of items or as individual items
+
+	example_1:	print(list_1)
+	
+	will print: ['item_1','item_2','item_3',...]
+	
+	example_2:	print(list_1[0])
+	
+	will print:	item_1
+	
+	example_3:	print("I have item: " + list_1[1])
+	
+	will print:	I have item: item_2
+
+
+List - Change Element
+-	change an element of an existing list
+*	syntex: list[pos] = 'new_str'
+
+	example:	months[3] = 'november'
+
+
+List - Append
+-	add an element at the end of a list
+*	syntex: list.append('new_item')
+
+	example:	months.append('may')
+	
+	will add 'may' to the end of the list
+
+	
+List - Insert
+-	add a new element to the list in a position of choice
+*	syntex:	list.insert(pos,'new_str')
+
+	example:	months.insert(0,'december')
+	
+	will add 'december' to be at the [0] position of the list
+
+
+List - Delete
+-	delete a chosen item of the list
+*	syntex:	del list[pos]
+
+	example:	del months[1]
+	
+	will delete the element in position 1 of the list
+
+
+The Pop method
+-	the pop method allows us to take (pop) an item from a list, and store it in a new variable
+**	default is the last item on the list
+**	the other ooption is to pop an item at a specific location on the list
+*	syntex:	new_var = list.pop() #default	|| new_var = list.pop(pos)
+
+	example_1:	popped_subscribers = subscribers.pop()
+	
+	pops the last item of subscribers[list] into the popped_subscribers variable
+	
+	example_2:	first_subscriber = subscribers.pop(0)
+	
+	pops the first [0] item of subscribers[list] into the first_subscriber variable
+
+
+The Remove method
+-	the remove method allows us to remove an item from a list without having to store it in a different variable
+*	syntex:	list.remove('str_to_remove')
+
+	example:	subscribers.remove('tom@example.com')
+	
+	will remove 'tom@example.com' from the list, never mind the location in the list
+
+
+List - Sorting
+-	list sorting allows us to sort a list alphabetically
+**	list sorting will change the order of the original list
+*	syntex: list.sort()
+
+	example:	list_1 =['bag','author','oil','jessie']
+				list_1.sort()
+				print(list_1)
+	
+	will print:	['author','bag','jessie','oil']
+
+
+List - Sorting(reverse)
+-	list reverse sorting allows us to sort the list in reverse alphabetical order
+**	list sorting will change the order of the original list
+*	syntex:	list.sort(reverse=True)
+
+	example:	list_1 =['bag','author','oil','jessie']
+				list_1.sort(reverse=True)
+				print(list_1)
+	
+	will print:	['oil','jessie','bag','author']
+
+
+List - Sorted
+-	the sorted command allows us to print a list, while sorted alphabetically
+**	list sorting will not change the order of the original list
+*	syntex:	print(sorted(list))
+
+	example:	list_1 =['bag','author','oil','jessie']
+				print(sorted(list_1))
+	
+	will print:	['author','bag','jessie','oil']
+
+
+List - Reverse
+-	the reverse command allows us to reverse the order of a list
+**	list sorting will change the order of the original list
+*	syntex:	list.reverse()
+
+	example:	list_1 =['item_1','item_2','item_3','item_4']
+				list_1.reverse
+				print(list_1)
+	
+	will print:	['item_4','item_3','item_2','item_1']
+
+
+List - Length
+-	the length command shows us the number of items in a list
+*	syntex:	print(len(list))
+
+	example:	list_1 =['item_1','item_2','item_3','item_4']
+				print(len(list_1))
+	
+	will print:	"4"
+
+
+List - For Loop
+-	for loops are traditionally used when you have a block of code which you want to repeat a fixed number of times
+**	every for loop has to be closed with a colon (:)
+**	which tells python: this is where the body of the loop is
+**	after writing the first line of the loop, the second one will automatically be indented
+*	syntex:	for var in list:
+				action_in_loop_1
+				action_in_loop_2
+				...
+
+	example:	months = ['january','fabruary','march','april','may','june','july','august','september']
+				
+				for month in months:
+					print(month)
+	
+	will print all the names of the months in the list one by one
+
+
+The Range function
+-	the range function creates a series of numbers
+**	the range begins at the first value and stops at the one before last
+*	syntex:	range(i,f,s)
+			will creat a range from "i" to (f-1) with step of "s"   
+	
+	example:	for value in range(1,5):
+					print(value)
+	
+	the output will be:
+	1
+	2
+	3
+	4
+
+
+Convert Numbers into a List
+-	this enables us to convert a series of numbers (such of in the range function) and put them into a list
+*	syntex:list(range(i,f))
+
+	example:	numbers = list(range(1,5))
+				print(numbers)
+	
+	the output will be: [1,2,3,4]
+
+
+Minimum|Maximum
+-	these functions allows us to find the minimal and maximal value within a list
+*	syntex:	min(list)	|	max(list)
+
+	example:	numbers = [5,3,2,8,1]
+				print(min(numbers))
+				print(max(numbers))
+					
+	the output will be:	1	,	8
+
+
+Sun function
+-	the sum function sums (adds) up all the items in a list
+*	syntex:	sum(list)
+
+	example:	numbers = [5,3,2,8,1]
+				print(min(numbers))
+					
+	the output will be:	19
+
+
+Slicing a List
+-	slicing a list enables us to take a specific part from the list
+*	syntex: names[i:f]
+**	will slice from "i" to (f-1)
+**	"i" default is 0	|	"f" default is the end of the list
+
+	examples:	names = ['tony','deirdre','senan','carol']
+				
+				print(names[0:2])	# Will print items 0,1
+				print(names[1:3])	# Will print items 1,2
+				print(names[:3])	# Will print items 0,1,2 
+				print(names[2:])	# Will print all the items between the 2nd item and the last
+				print(names[-3:])	# Will print the last 3 items
+
+
+Looping Through a Slice
+-	looping through a slice enables us to run a loop within a slice of a list
+*	syntex:	for var in list[i:f]
+**	"i","f" represents the first and last position of the slice within a list
+
+	example:	names = ['tony','frank','mary','carl']
+				
+				for name in names[1:3]
+					print(name.title())
+	
+	the output will be: Frank
+						Mary
+
+
+Copying a List
+-	copying a list is creating a slice that include the entire original list
+**	can be used if we do not want to alter the original list
+*	syntex: new_list = old_list[:]
+
+	example:	names = ['tony','frank','mary','carl']
+				first_names = names[:]
+				print(first_names)
+				
+	the output will be the new list of names, copied from the old one
+
+
+The Input statement
+-	the input statement allows us to take input from the user
+**	can be used while printing to the user
+*	syntex:	var = input()	|	var = input("message! ")
+
+	example:	welcome = input("Hi, what's your name? ")
+	
+	this line will ask the user for it's name and will store it in the welcome variable
+
+
+Python Conditions and If statements
+-	Python supports the usual logical conditions from mathematics:
+
+	Equals:						a == b
+	-----------------------------------
+	Not Equals: 				a != b
+	-----------------------------------
+	Less than:					a <  b
+	-----------------------------------
+	Less than or equal to:		a <= b
+	-----------------------------------
+	Greater than:				a >  b
+	-----------------------------------
+	Greater than or equal to:	a >= b
+	
+	These conditions can be used in several ways, most commonly in "if statements" and loops.
+
+
+If statements
+-	An if statement is a programming conditional statement that, if proved true, performs a function or displays information
+**	it is possible to use number of "if" and "elif" one after one
+*	syntex: if (condition):	||	elif (condition):	||	else:
+
+	example:	if a > b:
+					print("A>B")
+				
+				elif a == b:
+					print("A=B")
+				
+				else:
+					print("A<B")
+
+
+List - Check Item Existence
+-	We can use the if statement to check if a certain item is on a list
+*	syntex:	if var_name in list:
+
+	example:	if name in registered_names:
+					print("This name is already taken.")
+
+
+List - Check Item Non-Existence
+-	Same as checking item existence, just checking if not existing
+*	syntex:	if var_name not in list:
+
+	example:	if name not in admin_names:
+					print("You do not have admin privileges.")
+				else:
+					print("Access granted.")
+
+
+List - Is Empty?
+-	We can use an if statement to check if a list is empty or not
+*	syntex: if list_name:	||		if not list_name:
+	Return if list is full:
+			True			||		False
+
+	example:	cart_1 = ['carrot']
+				cart_2 = []
+				
+				if cart_1:
+					print("The cart is not empty")
+				else:
+					print("The cart is empty")
+				
+				if not cart_2:
+					print("The cart is empty")
+				else:
+					print("The cart is not empty")
+
+
+Using Multiple Lists
+-	using more than one list enables us to compare between different list
+
+	example:	in_stock = ['blue pens','paper','staples']
+
+				shopping_cart = ['blue pens','paper','staples','orange post-its']
+
+				for item in shopping_cart:
+					if item in in_stock:
+						print("Adding " + item + " to your order.")
+					else:
+						print("Sorry, " + item + " is not in stock.")
+				print("Your order is complete.")
+
+
+Dictionary
+-	A dictionary is a collection of pairs which is unordered, changeable and indexed.
+-	In Python dictionaries are written with curly brackets, and they have keys and values.
+*	syntex: dictionary_name = {'key_1' : 'str_val' , 'key_2' : int_val}
+**	a dictionary can also be built empty:	dict_1 = {}
+
+	example:	book_1 = {'author' : 'Nikola Tesla' , 'price' : 200}
+				print("The author is: " + book_1['author'] + " and the price is: " + book_1['price'])
+	
+				# in order to check if a value is in a dictionary we can use the "in" operator
+				if 'author' in book_1:
+					print("The value 'author' exist in the dictionary\n")
+				else:
+					print("The value 'author' does not exist in the dictionary\n")
+
+-	A dictionary can also be written in the following form:
+
+				book_1 = {
+					'name' : 'elon musk',
+					'author' : 'ashlee vance',
+					'price' : '14.99',
+					'publisher' : 'virgin books',
+				}
+
+
+Dictionary - Adding Key
+-	either adding to an empty dictionary or one with values, we can add a new key
+*	syntex:	dict_1['new_key'] = 'this is a new value for "new_key".
+
+	example:	dict_1 = {}
+				dict_1['key_1'] = 'the value matches to key_1'
+
+
+Dictionary - the get() method
+-	The get method allows us to get a value from a dictionary
+-	this method also have a 'safety net' for a case of a key that do not exist
+*	syntex:	print(dict_1.get('key' , 'non existence message')
+**	the default non existence message is 'None'
+
+	example_1:	book_1 = {'author' : 'Nikola Tesla' , 'price' : 200}
+				print(book_1.get('author')
+				print(book_1.get('context' , 'This key does not exist")
+
+	the output will be:	Nikola Tesla
+						This key does not exist
+
+
+Dictionary - the items() method
+-	The items method allows us to print all the items in a dictionary
+*	syntex: dict_1.items()
+**	the items() method takes no arguments
+
+	example_1:	# Looping through key-value pairs
+				book_1 = {
+					'name' : 'elon musk',
+					'author' : 'ashlee vance',
+					'price' : '14.99',
+					'publisher' : 'virgin books',
+				}
+
+				for key, value in book_1.items():
+					print("\nKey: " + key.title())
+					print("Value: " + value.title())
+	Output:	
+			Key: Name
+			Value: Elon Musk
+
+			Key: Author
+			Value: Ashlee Vance
+
+			Key: Price
+			Value: 14.99
+
+			Key: Publisher
+			Value: Virgin Books
+			
+	example_2:	for key, value in book_1.items():
+					print("\n" + key.title() + "\t:\t" + value.title())	
+
+	Output:	
+			Name	:	Elon Musk
+
+			Author	:	Ashlee Vance
+
+			Price	:	14.99
+
+			Publisher	:	Virgin Books
+	
+	
+	example_3:	print(book_1.items())
+	
+	Output:	dict_items([('name', 'elon musk'), ('author', 'ashlee vance'), ('price', '14.99'), ('publisher', 'virgin books')])
+	
+	
+	example_4:	items = book_1.items()
+				del book_1['name']
+				print(items)
+				
+	Output:	dict_items([('author', 'ashlee vance'), ('price', '14.99'), ('publisher', 'virgin books')])
+
+
+Dictionary - the keys() method
+-	The keys method allows to take only the keys (key-value pairs) from a dictionary
+*	syntex: dict_1.keys()
+
+	example:	for name in birthday_months.keys():
+					print(name)
+
+
+Dictionary - the values() method
+-	The values method allows to take only the values (key-value pairs) from a dictionary
+*	syntex: dict_1.values()
+
+	example:	print(birthday_months.values())
+
+
+Dictionaries in a List
+-	We can store multiple dictionaries in a list in order to keep large abount of information in an orginized way
+**	storing dictionaries in a list is called nesting
+*	syntex:	list_1 = [dict_1, dict_2, dict_3, ...]
+
+	example:	book_0 = {'name' : 'elon musk' , 'author' : 'ashlee vance' , 'price' : '14.99' , 'publisher' : 'virgin books'}
+				book_1 = {'name' : 'team of rivals' , 'author' : 'doris kearns goodwin' ,'price' : '10.99', 'publisher' : 'simon & schuster'}
+				book_2 = {'name' : 'the everything store' , 'author' : 'brad stone','price' : '12.22', 'publisher' : 'little, brown and company'}
+
+				books = [book_0, book_1, book_2]
+
+Set
+-	A set is a collection which is unordered and unindexed. In Python sets are written with curly brackets.
+*	syntex:	set = {"item_1" , "item_2" , "item_3" , ...}
+**	the set order will vary between runs (unordered)
+**	a set will not contain the same item more than once.
+**	once set, the items in a set cannot be changed, only added.
+
+	example:	set_1 = {"apple" , "banana" , "cherry", "apple"}
+				print(set_1)
+	
+	Output:		{'cherry', 'apple', 'banana'} #mixed order
+
+
+Set - Check Value
+-	We can check if a value is present in a set 
+*	syntex: "value" in set
+
+	example:	set_1 = {"apple" , "banana" , "cherry", "apple"}
+				print("cherry" in set_1)
+	
+	Output:	True
+
+
+Set - Add method
+-	The add method allows us to add one item at the time
+-	a set items cannot be changed, but one or more items can be added
+*	syntex:	set_1.add("item")
+
+	example:	set_1 = {"apple", "banana", "cherry"}
+
+				set_1.add("orange")
+
+				print(set_1)
+
+
+Set - Update method
+-	The update method allows us to add more than one item to a list
+*	syntex:	set_1.update(['item_1', 'item_2', 'item_3',...])
+
+	example_1:	set_1 = {"apple", "banana", "cherry"}
+
+				set_1.update(["orange", "mango", "grapes"])
+
+				print(set_1)
+	
+	Output:		{'apple', 'orange', 'cherry', 'mango', 'banana', 'grapes'}
+	
+	example_2:	set1 = {'a','b','c'}
+				set2 = {1,2,3}
+				set1.update(set2) #insert set2 into set1
+				print(set1)
+	
+	Output:		{'c', 'b', '3', 'a', '2', '1'}
+
+
+Set - Union method
+-	The union method, similar to the update method, allows us to unite (join) 2 sets together
+*	syntex:	set3 = set1.union(set2)
+**	the union method wil not effect the 2 sets used, only creat a new one combined
+
+Set - Remove method
+-	The remove method allows us to remove an item from a set
+*	syntex:	set_1.remove('apple')
+**	the remove method will raise an error if the item to remove is not in the set
+
+	example_1:	set_1 = {"apple", "banana", "cherry"}
+				set_1.remove('apple')
+				print(set_1)
+	
+	Output:		{'cherry', 'banana'}
+	
+	example_2:	set_1.remove('mango')
+	
+	Output:		No output - Error
+
+
+Set - Discard method
+-	The discard method allows us to remove an item from a set
+*	syntex:	set_1.discard('kiwi')
+**	the discard method will not raise an error if the item is not in the set
+
+	example_1:	set_1 = {"apple", "banana", "cherry"}
+				set_1.discard('kiwi')
+				print(set_1)
+	
+	Output:		{'cherry', 'banana', 'apple'}
+				# no error is raised
+
+
+Set - Clear method
+-	The clear method will clear all items in a set - empties the set
+*	syntex:	set_1.clear()
+**	the set will remain, but empty of any values
+**	the output for printing the set will be set()
+
+
+Set - Deleting a set
+-	We can use the del command to completely delete a set
+*	syntex:	del set_1
+
+
+Set - The Set Constructor
+-	The set constructor command allows us to creat a new set
+*	syntex:	set_1 = set(('item_1', 'item_2', 'item_3', ...))
+**	note the double curly brackets
+
+	example_1:	set_1 = set(('apple', 'banana', 'cherry'))
+	
+	example_2:	list1 = ['microsoft', 'google', 'apple')
+				set_1 = set(list1)
+
+
+While Loop
+-	The while loop allows us to run a block of code unknown amout of times
+-	as long as the condition is True
+*	syntex:	while (condition):
+
+	example:	num = 0
+				while num < 10:
+					num += 1
+				print(num)
+	
+	The output will be: 10
+
+
+break, continue, and pass statements
+
+The break statement
+-	the break statement provides us the opportunity to exit out of a loop when an external condition is triggered
+
+	example:	number = 0
+
+				for number in range(10):
+					if number == 5:
+						break    # break here
+
+					print('Number is ' + str(number))
+
+				print('Out of loop')
+	
+	The output will be:	Number is 0
+						Number is 1
+						Number is 2
+						Number is 3
+						Number is 4
+						Out of loop
+
+The continue statement
+-	The continue statement gives us the option to skip over the part of a loop where an external condition is triggered
+-	but to go on to complete the rest of the loop
+-	That is, the current iteration of the loop will be disrupted, but the program will return to the top of the loop
+
+	example:	number = 0
+
+				for number in range(10):
+					if number == 5:
+						continue    # continue here
+
+					print('Number is ' + str(number))
+
+				print('Out of loop')
+
+	The output will be:	Number is 0
+						Number is 1
+						Number is 2
+						Number is 3
+						Number is 4
+						Number is 6
+						Number is 7
+						Number is 8
+						Number is 9
+						Out of loop
+
+
+The pass statement
+-	When an external condition is triggered, the pass statement allows us
+-	to handle the condition without the loop being impacted in any way
+-	all of the code will continue to be read unless a break or other statement occurs.
+
+	example:	number = 0
+
+				for number in range(10):
+					if number == 5:
+						pass    # pass here
+
+					print('Number is ' + str(number))
+
+				print('Out of loop')
+	
+	The output will be:	Number is 0
+						Number is 1
+						Number is 2
+						Number is 3
+						Number is 4
+						Number is 5
+						Number is 6
+						Number is 7
+						Number is 8
+						Number is 9
+						Out of loop
