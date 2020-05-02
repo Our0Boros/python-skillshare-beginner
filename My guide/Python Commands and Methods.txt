@@ -4,105 +4,104 @@ Python Commands and Methods
 
 Method	/	Command			|			Example
 ------------------------------------------------------
-String concatenation		|	print("Hi " + first_name)
-							|
+String concatenation			|	print("Hi " + first_name)
+					|
 The title method			|	str = "hello world".title()	||	print(str.title())
-							|
-The find method				|	my_book = "My favorite book is 'Elon Mask'.".find('Elon')		
-							|
-The lower / upper method	|	name = "OMER GODER".lower()  || name = "omer goder".upper()
-							|
+					|
+The find method				|	my_book = "My favorite book is 'Elon Mask'.".find('Elon')									|
+The lower / upper method		|	name = "OMER GODER".lower()  || name = "omer goder".upper()
+					|
 The replace method			|	my_book = "My favorite book is 'Elom Musk'.".replace('Elom','Elon')
-							|
+					|
 The strip method			|	address = "		102 Main Street   ".strip()||rstrip()||lstrip	
-							|
+					|
 Adding whitespace			|	"\t" - adds a tab	||	"\n" - add a new line
-							|
-Numbers to String (casting)	|	str(int_var_name)
-							|
-Comments					|	#This is a comment
-							|
-List						|	months = ['january','february','march','april']
-							|
-List - change element		|	months[3] = 'november'
-							|
+					|
+Numbers to String (casting)		|	str(int_var_name)
+					|
+Comments				|	#This is a comment
+					|
+List					|	months = ['january','february','march','april']
+					|
+List - change element			|	months[3] = 'november'
+					|
 List - Append				|	months.append('may')
-							|
+					|
 List - Insert				|	months.insert(0,'december')
-							|
+					|
 List - Delete				|	del months[1]
-							|
+					|
 The Pop method				|	popped_subscribers = subscribers.pop()
-							|
+					|
 The Remove method			|	subscribers.remove('tom@example.com')
-							|
+					|
 List - Sorting				|	months.sort()
-							|
-List - Sorting(reverse)		|	months.sort(reverse=True)
-							|
+					|
+List - Sorting(reverse)			|	months.sort(reverse=True)
+					|
 List - Sorted				|	print(sorted(months))
-							|
+					|
 List - Reverse				|	months.reverse()
-							|
+					|
 List - Length				|	print(len(list))
-							|
+					|
 List - For Loop				|	for month in months: \\(CR LF - indent)	print(month)
-							|
+					|
 The Range function			|	for value in range(1,5):	\\(CR LF - indent)	print(value)
-							|
-Minimum|Maximum function	|	print(max(numbers))
-							|
+					|
+Minimum|Maximum function		|	print(max(numbers))
+					|
 Sum function				|	print(sum(numbers))
-							|
+					|
 Slicing a List				|	print(names[1:3])
-							|
-Looping through a slice		|	for name in names[:3]:	\\(CR LF - indent)	print(name.title())
-							|
+					|
+Looping through a slice			|	for name in names[:3]:	\\(CR LF - indent)	print(name.title())
+					|
 Copying a List				|	first_names = names[:]
-							|
+					|
 Input statement				|	welcome = input("Hi, what's your name? ")
-							|
+					|
 If statements				|	if age >= 18:	\\(CR LF - indent)	print("You can vote!")
-							|
-List - Check Item Existence	|	if name in registered_names:	\\\\(CR LF - indent)	print("This name is already taken.")
-							|
+					|
+List - Check Item Existence		|	if name in registered_names:	\\\\(CR LF - indent)	print("This name is already taken.")
+					|
 List - Is Empty?			|	if cart:	#return False if empty	||	if not cart:	#return True if Empty 
-							|
-Dictionary					|	prod_1 = {'product' : 'carrot' , 'price' : 10}
-							|
-Dictionary - Adding Key		|	prod_1['color'] = 'orange'
-							|
-Dictionary - get method		|	print(prod_1.get('texture', 'not in the dictionary'))
-							|
-Dictionary - items method	|	print(book_1.items())
-							|
-Dictionary - keys method	|	print(birthday_months.keys())
-							|
-Dictionary - values method	|	print(birthday_months.values())
-							|
-Dictionaries in a List		|	books = [book_0, book_1, book_2]
-							|
-Set							|	set_1 = {"apple" , "banana" , "cherry" , "apple"} # Only one 'apple' will b included
-							|
+					|
+Dictionary				|	prod_1 = {'product' : 'carrot' , 'price' : 10}
+					|
+Dictionary - Adding Key			|	prod_1['color'] = 'orange'
+					|
+Dictionary - get method			|	print(prod_1.get('texture', 'not in the dictionary'))
+					|
+Dictionary - items method		|	print(book_1.items())
+					|
+Dictionary - keys method		|	print(birthday_months.keys())
+					|
+Dictionary - values method		|	print(birthday_months.values())
+					|
+Dictionaries in a List			|	books = [book_0, book_1, book_2]
+					|
+Set					|	set_1 = {"apple" , "banana" , "cherry" , "apple"} # Only one 'apple' will b included
+					|
 Set - Check Value			|	print("cherry" in set_1)
-							|
+					|
 Set - Add method			|	set_1.add('mango')
-							|
+					|
 Set - Update method			|	set_1.update('orange','mango','grapes'])
-							|
+					|
 Set - Union method			|	set3 = set1.union(set2)
-							|
+					|
 Set - Remove method			|	set_1.remove('banana')
-							|
-Set - Discard method		|	set_1.discard('kiwi')
-							|
+					|
+Set - Discard method			|	set_1.discard('kiwi')
+					|
 Set - Clear method			|	set_1.clear()
-							|
-Set - the Set Constructor	|	set_1 = set(('apple','microsoft','google'))	||	set_1 = set(list_1)
-							|
-While Loop					|	while True: (CR LF - indent)	number += 1
-							|
-break, continue, and pass	|	if (num == 5):	(CR LF - indent)	break
+					|
+Set - the Set Constructor		|	set_1 = set(('apple','microsoft','google'))	||	set_1 = set(list_1)
+					|
+While Loop				|	while True: (CR LF - indent)	number += 1
+					|
+break, continue, and pass		|	if (num == 5):	(CR LF - indent)	break
 
 
 
