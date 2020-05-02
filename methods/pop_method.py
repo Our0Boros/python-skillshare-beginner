@@ -3,7 +3,7 @@
 ### Using the pop method
 ### Using the remove method
 
-subscribers = ['devilset91@gmail.com','omer.goder.docs@gmail.com','g.d.y.eng@gmail.com']
+subscribers = ['sub_1@domain','sub_2@username','sub_3@vixi']
 
 # Print the list
 print(subscribers)
@@ -20,7 +20,7 @@ print(popped_subscribers)
 print("\n")
 
 # Reset the list
-subscribers = ['devilset91@gmail.com','omer.goder.docs@gmail.com','g.d.y.eng@gmail.com']
+subscribers = ['sub_1@domain','sub_2@username','sub_3@vixi']
 
 # Using the pop method to pop the (0) item on the list
 first_subscriber = subscribers.pop(0)
@@ -33,7 +33,7 @@ print("\n")
 
 print("Your first subscriber was \'" + first_subscriber + "\'.\n")
 
-subscribers = ['devilset91@gmail.com','omer.goder.docs@gmail.com','g.d.y.eng@gmail.com']
+subscribers = ['sub_1@domain','sub_2@username','sub_3@vixi']
 
 print(subscribers)
 
@@ -43,7 +43,7 @@ subscribers.remove('omer.goder.docs@gmail.com')
 print(subscribers)
 print("\n")
 
-subscribers = ['devilset91@gmail.com','omer.goder.docs@gmail.com','g.d.y.eng@gmail.com']
+subscribers = ['sub_1@domain','sub_2@username','sub_3@vixi']
 
 subscribed_by_mistake = 'omer.goder.docs@gmail.com'
 
