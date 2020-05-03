@@ -3,6 +3,17 @@
 ### Learning how to work with sets in python
 
 # Creating a set
+# the add method
+# the update method
+# the len method
+# the remove method
+# the discard method
+# the clear method
+# the union method
+# using the update method to combine two sets
+# the set constructor command
+
+# Creating a set
 set_1 = {'apple','banana','cherry','apple'}
 print(set_1)
 
