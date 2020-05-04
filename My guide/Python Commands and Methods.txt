@@ -869,7 +869,7 @@ Functions
 **	the function can work with 0 arguments
 
 	example:	def printme(str):
-				"""This is a documentation string or docstring for short"""
+				"""This is a documentation string or 'docstring' for short"""
 				print(str)
 			
 			str = 'Hello World'
@@ -879,7 +879,7 @@ Functions
 	
 	
 Function Arguments
--	You can call a function by using the following types of formal arguments −
+-	You can call a function by using the following types of formal arguments:
 
 **	Required arguments
 **	Keyword arguments
@@ -895,19 +895,19 @@ Function Arguments
 				   print(str)
 				
 				str = 'Hello World!!!'
-				# Now you can call printme function
 				printme(str)
 
 
 -	Keyword arguments
 **	Keyword arguments are related to the function calls.
 **	When you use keyword arguments in a function call, the caller identifies the arguments by the parameter name.
+**	If the name of the parameters in the function call is the same as in writing the function, than the order does not matter
+*	syntex:	def func_name(arg1, arg2, ...):
 
 	example_1:	def printme( str ):
 				   "This prints a passed string into this function"
 				   print(str)
 
-				# Now you can call printme function
 				printme( str = "My string")
 
 	The output will be: My string
@@ -919,7 +919,6 @@ Function Arguments
 						   print("Name: " + name)
 						   print("Age: " + age)
 
-					# Now you can call printinfo function
 					printinfo(age=50, name="miki")
 	
 	The output will be:	Name: miki
@@ -935,7 +934,6 @@ Function Arguments
 				   print("Name: " + name)
 				   print ("Age: " +  age)
 
-				# Now you can call printinfo function
 				printinfo(age=50, name="miki")
 				printinfo(name="miki")
 	
@@ -972,3 +970,21 @@ Function Arguments
 	The output will be:	70
 						60
 						50
+
+
+The Anonymous Functions
+-	These functions are called anonymous because they are not declared in the standard manner by using the def keyword. 
+-	You can use the lambda keyword to create small anonymous functions.
+
+-	Lambda forms can take any number of arguments but return just one value in the form of an expression. 
+
+-	They cannot contain commands or multiple expressions.
+
+-	An anonymous function cannot be a direct call to print because lambda requires an expression
+
+-	Lambda functions have their own local namespace and cannot access variables other than those 
+	in their parameter list and those in the global namespace.
+	
+*	syntax:	syntax of lambda functions contains only a single statement, which is as follows:
+			lambda [arg1 [,arg2,.....argn]]:expression
+
