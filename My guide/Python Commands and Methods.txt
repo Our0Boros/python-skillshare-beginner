@@ -102,6 +102,8 @@ Set - the Set Constructor		|	set_1 = set(('apple','microsoft','google'))	||	set_
 While Loop				|	while True: (CR LF - indent)	number += 1
 					|
 break, continue, and pass		|	if (num == 5):	(CR LF - indent)	break
+					|
+Function				|	def printme(str):
 
 
 
@@ -858,3 +860,20 @@ The pass statement
 						Number is 8
 						Number is 9
 						Out of loop
+
+
+Functions
+-	A function is a block of organized, reusable code that is used to perform a single, related action. 
+-	Functions provide better modularity for your application and a high degree of code reusing.
+*	syntex:	def func_name (args):
+**	the function can work with 0 arguments
+
+	example:	def printme(str):
+				print(str)
+			
+			str = 'Hello World'
+			printme(str)
+	
+	The output will be: Hello World
+	
+	
