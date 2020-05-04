@@ -3,7 +3,7 @@
 ### How to define a function
 
 def hello_world():
-	"""Displaying hello workd"""
+	"""Displaying hello world"""
 	print("Hello World!")
 
 hello_world()
