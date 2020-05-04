@@ -104,9 +104,11 @@ While Loop				|	while True: (CR LF - indent)	number += 1
 break, continue, and pass		|	if (num == 5):	(CR LF - indent)	break
 					|
 Function				|	def printme(str):
-
-
-
+					|
+**	Required arguments	
+**	Keyword arguments
+**	Default arguments
+**	Variable-length arguments
 
 
 var_name = "String"
@@ -962,8 +964,8 @@ Function Arguments
 				   return;
 
 				# Now you can call printinfo function
-				printinfo( 10 )
-				printinfo( 70, 60, 50 )
+				printinfo(10)
+				printinfo(70, 60, 50)
 	
 	The output will be:	10
 	
@@ -972,7 +974,7 @@ Function Arguments
 						50
 
 
-The Anonymous Functions
+The Anonymous Functions (Lambda)
 -	These functions are called anonymous because they are not declared in the standard manner by using the def keyword. 
 -	You can use the lambda keyword to create small anonymous functions.
 
@@ -988,3 +990,29 @@ The Anonymous Functions
 *	syntax:	syntax of lambda functions contains only a single statement, which is as follows:
 			lambda [arg1 [,arg2,.....argn]]:expression
 
+	example:	sum = lambda num_1, num_2: num_1 + num_2
+				print(sum(10,5))
+	
+	The output will be: 15
+
+
+The return Statement
+-	The statement return [expression] exits a function, optionally passing back an expression to the caller. 
+-	A return statement with no arguments is the same as return None (or no return at all).
+*	syntex:	return arg
+
+	example:	def power(num1, num2):
+					po = num1 ** num2
+					return po
+				
+				po = power(10,3)
+				print(po)
+	
+	The output will be: 1000
+
+
+Global vs. Local variables
+-	Variables that are defined inside a function body have a local scope, and those defined outside have a global scope.
+-	This means that local variables can be accessed only inside the function in which they are declared, 
+	whereas global variables can be accessed throughout the program body by all functions. 
+-	When you call a function, the variables declared inside it are brought into scope.
