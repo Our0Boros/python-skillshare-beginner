@@ -1,6 +1,7 @@
 ### 18/04/2020
 ### Author: Omer Goder
 ### Working with multiple lists
+### Using the in operator
 
 in_stock = ['blue pens','paper','staples']
 
