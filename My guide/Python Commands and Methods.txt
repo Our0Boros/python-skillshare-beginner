@@ -6,7 +6,7 @@ Method	/	Command			|			Example
 ------------------------------------------------------
 String concatenation			|	print("Hi " + first_name)
 					|
-printing numbers and strings	|	print("%s is %d years old" %(name, age))
+printing numbers and strings		|	print("%s is %d years old" %(name, age))
 					|
 The title method			|	str = "hello world".title()	||	print(str.title())
 					|
