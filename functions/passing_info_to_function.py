@@ -11,6 +11,10 @@ def welcome(username):
 name = 'omer'
 welcome(name)
 
+# We can also call the function with the value of the argument
+# instead of a parameter holding that value
+welcome('jessie')
+
 # While using keyword arguments like the following
 # the argument sent to the function (call)
 # must be sent after the same name the function accepts
