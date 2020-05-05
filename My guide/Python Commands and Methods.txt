@@ -6,6 +6,8 @@ Method	/	Command			|			Example
 ------------------------------------------------------
 String concatenation			|	print("Hi " + first_name)
 					|
+printing numbers and strings	|	print("%s is %d years old" %(name, age))
+					|
 The title method			|	str = "hello world".title()	||	print(str.title())
 					|
 The find method				|	my_book = "My favorite book is 'Elon Mask'.".find('Elon')									|
@@ -105,7 +107,7 @@ break, continue, and pass		|	if (num == 5):	(CR LF - indent)	break
 					|
 Function				|	def printme(str):
 					|
-**	Required arguments	
+**	Required arguments
 **	Keyword arguments
 **	Default arguments
 **	Variable-length arguments
