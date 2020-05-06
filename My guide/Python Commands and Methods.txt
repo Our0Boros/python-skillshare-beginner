@@ -891,7 +891,8 @@ Function Arguments
 **	Required arguments
 **	Keyword arguments
 **	Default arguments
-**	Variable-length arguments
+**	Variable-length arguments (*args)
+**	Keyword variable-length arguments (**kwargs)
 
 -	Required arguments
 **	Required arguments are the arguments passed to a function in correct positional order.
@@ -954,7 +955,8 @@ Function Arguments
 	
 	This means that if no value is entered than the value will remain 'empty' (optional)
 
--	Variable-length arguments
+
+-	Variable-length arguments (*args)
 **	You may need to process a function for more arguments than you specified while defining the function.
 **	These arguments are called variable-length arguments and are not named in the function definition,
 	unlike required and default arguments.
@@ -982,6 +984,22 @@ Function Arguments
 	The output will be:	70
 						60
 						50
+
+
+-	Keyword variable-length arguments (**kwargs)
+**	The special syntax **kwargs in function definitions in python is used to pass a keyworded, variable-length argument list.
+**	We use the name kwargs with the double star. The reason is because the double star 
+	allows us to pass through keyword arguments (and any number of them).
+
+**	A keyword argument is where you provide a name to the variable as you pass it into the function.
+**	One can think of the kwargs as being a dictionary that maps each keyword to the value that we pass alongside it. 
+**	Once in the function, the **kwargs acts as a dictionary
+
+	example:	def print_kwargs(**kwargs):
+					for key, value in kwargs.items():
+						print(key.title() + " : " + str(value))
+
+				print_kwargs(Pi = 3.141592654, avogadro = 6.0221*10**23, string = 'Hello World!!!')
 
 
 The Anonymous Functions (Lambda)
