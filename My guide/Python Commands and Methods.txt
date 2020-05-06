@@ -391,7 +391,7 @@ Minimum|Maximum
 	the output will be:	1	,	8
 
 
-Sun function
+Sum function
 -	the sum function sums (adds) up all the items in a list
 *	syntex:	sum(list)
 
@@ -873,6 +873,7 @@ Functions
 *	syntex:	def func_name (args):
 **	the function can work with 0 arguments
 **	the print the 'docstring' on the console use: help(func_name)
+**	We can send a copy of a list into a function using a full slice: list[:] || or just the list to modify
 
 	example:	def printme(str):
 				"""This is a documentation string or 'docstring' for short"""
