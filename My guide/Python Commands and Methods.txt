@@ -1008,8 +1008,9 @@ The return Statement
 -	The statement return [expression] exits a function, optionally passing back an expression to the caller. 
 -	A return statement with no arguments is the same as return None (or no return at all).
 *	syntex:	return arg
+**	the return statement can also return non-string/int values such as list, dictionaries, sets etc...
 
-	example:	def power(num1, num2):
+	example_1:	def power(num1, num2):
 					po = num1 ** num2
 					return po
 				
@@ -1017,6 +1018,21 @@ The return Statement
 				print(po)
 	
 	The output will be: 1000
+	
+	
+	example_2:	def build_book(name, author, publisher):
+					"""Create a dicionary of book information"""
+					book = {'name' : name, 'author' : author, 'publisher' : publisher}
+					return book
+
+				my_book = build_book('elon musk', 'ashlee vance', 'virgin books')
+
+				for key, value in my_book.items():
+					print(key.title() + ": " + value.title())
+	
+	The output will be: Name:	Elon Musk
+								Author: Ashlee Vance
+								Publisher: Virgin Books
 
 
 Global vs. Local variables
