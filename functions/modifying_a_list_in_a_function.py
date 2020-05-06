@@ -2,6 +2,8 @@
 ### Author: Omer Goder
 ### Modifying a list in a function
 
+### we can send a copy of the list into a function using a full slice: list[:]
+
 # Airline booking
 
 # Write a function that passes a passenger 
@@ -23,7 +25,7 @@ def move_all(non_checked_in, checked_in):
 
 non_checked_in = ['amram','annis', 'moai']
 checked_in = ['ipkis','stas','mark','maor']
-passed = check_in(non_checked_in, checked_in,'moai')
+passed = check_in(non_checked_in[:], checked_in,'moai')
 
 
 print("Checked in: ")
