@@ -25,6 +25,7 @@ non_checked_in = ['amram','annis', 'moai']
 checked_in = ['ipkis','stas','mark','maor']
 passed = check_in(non_checked_in, checked_in,'moai')
 
+
 print("Checked in: ")
 for passenger in checked_in:
 	print(passenger.title())
@@ -32,7 +33,6 @@ for passenger in checked_in:
 print("\nNot checked in: ")
 for passenger in non_checked_in:
 	print(passenger.title())
-
 
 
 move_all(non_checked_in,checked_in)
