@@ -110,6 +110,7 @@ Function				|	def printme(str):
 **	Required arguments
 **	Keyword arguments
 **	Default arguments
+	*	Optional arguments
 **	Variable-length arguments
 
 
@@ -945,6 +946,11 @@ Function Arguments
 								Age: 50
 								Name: miki
 								Age: 35
+**	We can user an "empty" default argument to make it optionally
+
+	example:	def full_name(first_name, last_name, middle_name = "")
+	
+	This means that if no value is entered than the value will remain 'empty' (optional)
 
 -	Variable-length arguments
 **	You may need to process a function for more arguments than you specified while defining the function.
