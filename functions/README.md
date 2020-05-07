@@ -43,10 +43,10 @@ def printme( str ):
 ```
 
 
--	Keyword arguments
-**	Keyword arguments are related to the function calls.
-**	When you use keyword arguments in a function call, the caller identifies the arguments by the parameter name.
-**	If the name of the parameters in the function call is the same as in writing the function, than the order does not matter
+- Keyword arguments
+  - Keyword arguments are related to the function calls.
+  - When you use keyword arguments in a function call, the caller identifies the arguments by the parameter name.
+  - If the name of the parameters in the function call is the same as in writing the function, than the order does not matter
 *	syntex:	def func_name(arg1, arg2, ...):
 
 ##### example_1:
