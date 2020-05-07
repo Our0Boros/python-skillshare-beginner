@@ -15,7 +15,7 @@
 		str = 'Hello World'
 		printme(str)
 ```
-	The output will be: Hello World
+The output will be: Hello World
 	
 	
 #### Function Arguments
@@ -47,25 +47,27 @@ def printme( str ):
 **	If the name of the parameters in the function call is the same as in writing the function, than the order does not matter
 *	syntex:	def func_name(arg1, arg2, ...):
 
-	example_1:	def printme( str ):
-				   "This prints a passed string into this function"
-				   print(str)
-
-				printme( str = "My string")
-
-	The output will be: My string
+##### example_1:
+```
+def printme( str ):
+	"This prints a passed string into this function"
+	print(str)
+	printme( str = "My string")
+```
+The output will be: My string
 	
 	
-	example_2: #	(Note that the order of parameters does not matter)
-						def printinfo( name, age ):
-						   "This prints a passed info into this function"
-						   print("Name: " + name)
-						   print("Age: " + age)
+##### example_2: (Note that the order of parameters does not matter)
+```
+def printinfo( name, age ):
+	"This prints a passed info into this function"
+	print("Name: " + name)
+	print("Age: " + age)
 
-					printinfo(age=50, name="miki")
-	
-	The output will be:	Name: miki
-						age: 50
+	printinfo(age=50, name="miki")
+```
+The output will be:	`Name: miki`
+			`age: 50`
 
 
 -	Default arguments
