@@ -23,14 +23,14 @@ Hello World!
 #### Function Arguments
 -	You can call a function by using the following types of formal arguments:
 
-**	Required arguments<br>
-**	Keyword arguments<br>
-**	Default arguments<br>
-**	Variable-length arguments<br>
+1. Required arguments<br>
+2. Keyword arguments<br>
+3. Default arguments<br>
+4. Variable-length arguments<br>
 
--	Required arguments
-**	Required arguments are the arguments passed to a function in correct positional order.
-**	Here, the number of arguments in the function call should match exactly with the function definition.
+**Required arguments**
+- Required arguments are the arguments passed to a function in correct positional order.
+- Here, the number of arguments in the function call should match exactly with the function definition.
 
 ###### example:	
 ```
