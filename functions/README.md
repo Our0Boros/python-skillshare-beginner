@@ -1,6 +1,6 @@
 ## Functions
 
-#### Function
+### Function
 -	A function is a block of organized, reusable code that is used to perform a single, related action. 
 -	Functions provide better modularity for your application and a high degree of code reusing.
 *	syntex:	def func_name (args):<br>
@@ -20,7 +20,7 @@ The output will be:
 Hello World!
 ```
 	
-#### Function Arguments
+### Function Arguments
 - You can call a function by using the following types of formal arguments:
 
 1. Required arguments<br>
@@ -28,7 +28,7 @@ Hello World!
 3. Default arguments<br>
 4. Variable-length arguments<br>
 
-**Required arguments**
+#### Required arguments
 - Required arguments are the arguments passed to a function in correct positional order.
 - Here, the number of arguments in the function call should match exactly with the function definition.
 
@@ -43,7 +43,7 @@ def printme( str ):
 ```
 
 
-- Keyword arguments
+#### Keyword arguments
   - Keyword arguments are related to the function calls.
   - When you use keyword arguments in a function call, the caller identifies the arguments by the parameter name.
   - If the name of the parameters in the function call is the same as in writing the function, than the order does not matter
@@ -77,7 +77,7 @@ age: 50
 ```
 
 
-- Default arguments
+#### Default arguments
   - A default argument is an argument that assumes a default value<br>
   if a value is not provided in the function call for that argument.
 
@@ -99,7 +99,7 @@ Name: miki
 Age: 35
 ```
 
-- Variable-length arguments
+#### Variable-length arguments (*args)
   - You may need to process a function for more arguments than you specified while defining the function.
   - These arguments are called variable-length arguments and are not named in the function definition,<br>
 	unlike required and default arguments.
@@ -130,6 +130,24 @@ The output will be:
 70
 60
 50
+```
+
+#### Keyword variable-length arguments (**kwargs)
+- The special syntax **kwargs in function definitions in python is used to pass a keyworded, variable-length argument list.
+- We use the name kwargs with the double star. The reason is because the double star<br>
+allows us to pass through keyword arguments (and any number of them).
+
+- A keyword argument is where you provide a name to the variable as you pass it into the function.
+- One can think of the kwargs as being a dictionary that maps each keyword to the value that we pass alongside it. 
+- Once in the function, the **kwargs acts as a dictionary
+
+example:
+```
+def print_kwargs(**kwargs):
+	for key, value in kwargs.items():
+	print(key.title() + " : " + str(value))
+
+print_kwargs(Pi = 3.141592654, avogadro = 6.0221*10**23, string = 'Hello World!!!')
 ```
 
 
