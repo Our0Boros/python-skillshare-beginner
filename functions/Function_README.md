@@ -21,7 +21,7 @@ Hello World!
 ```
 	
 #### Function Arguments
--	You can call a function by using the following types of formal arguments:
+- You can call a function by using the following types of formal arguments:
 
 1. Required arguments<br>
 2. Keyword arguments<br>
