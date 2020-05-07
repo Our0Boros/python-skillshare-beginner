@@ -66,7 +66,7 @@ def printinfo( name, age ):
 
 	printinfo(age=50, name="miki")
 ```
-The output will be:	`Name: miki`
+The output will be:	`Name: miki`\n
 			`age: 50`
 
 
