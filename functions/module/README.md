@@ -11,6 +11,14 @@
 *	syntex: `import func_name_in_module from module_name`
 *	use:	`func_name_in_module(func_args)`
 
+#### Import all functions
+-	We can import all the function within our module using the asterisk (*) sign
+-	In this method we do not need to use "dot notation" (module_name.func_name(args)
+-	This method is not recommanded
+	-	it's better to import a complete module (and use dot notation)
+	-	or call specific functions from a module
+*	syntex:	`from module_name import *`
+
 #### Module alias
 -	We can call a module by different name (alias) instead of the original name
 -	This can make our life easier at calling the module in our main program
