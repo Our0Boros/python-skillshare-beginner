@@ -15,8 +15,10 @@
 		str = 'Hello World'
 		printme(str)
 ```
-The output will be: Hello World
-	
+The output will be:
+```
+Hello World!
+```
 	
 #### Function Arguments
 -	You can call a function by using the following types of formal arguments:
@@ -54,8 +56,10 @@ def printme( str ):
 	print(str)
 	printme( str = "My string")
 ```
-The output will be: My string
-	
+The output will be: 
+```
+My string
+```
 	
 ##### example_2: (Note that the order of parameters does not matter)
 ```
@@ -66,8 +70,8 @@ def printinfo( name, age ):
 
 	printinfo(age=50, name="miki")
 ```
-The output will be:	`Name: miki`\n
-			`age: 50`
+The output will be:	`Name: miki`<br>
+			<tab><PRE><pre> `age: 50`
 
 
 -	Default arguments
@@ -82,10 +86,13 @@ The output will be:	`Name: miki`\n
 				printinfo(age=50, name="miki")
 				printinfo(name="miki")
 	
-	The output will be:	Name:	Name: miki
-								Age: 50
-								Name: miki
-								Age: 35
+	The output will be:
+	```
+	Name: miki
+	Age: 50
+	Name: miki
+	Age: 35
+	```
 
 -	Variable-length arguments
 **	You may need to process a function for more arguments than you specified while defining the function.
