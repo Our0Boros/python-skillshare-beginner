@@ -78,7 +78,8 @@ age: 50
 
 
 - Default arguments
-  - A default argument is an argument that assumes a default value<br>if a value is not provided in the function call for that argument.
+  - A default argument is an argument that assumes a default value<br>
+  if a value is not provided in the function call for that argument.
 
 example:
 ```
