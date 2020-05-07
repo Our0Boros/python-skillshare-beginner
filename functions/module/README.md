@@ -14,7 +14,7 @@
 #### Module alias
 -	We can call a module by different name (alias) instead of the original name
 -	This can make our life easier at calling the module in our main program
-* syntex: 'import module_name as module_alias'
+* syntex: `import module_name as module_alias`
 
 #### Function alias
 - We can call a function by different name (alias) instead of the original name
