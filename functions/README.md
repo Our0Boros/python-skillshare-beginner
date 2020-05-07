@@ -161,7 +161,7 @@ print_kwargs(Pi = 3.141592654, avogadro = 6.0221*10**23, string = 'Hello World!!
 - Lambda functions have their own local namespace and cannot access variables other than those<br>
 	in their parameter list and those in the global namespace.
 	
-- syntax:<br>syntax of lambda functions contains only a single statement, which is as follows:
+- syntax:<br>syntax of lambda functions contains only a single statement, which is as follows:<br>
 `lambda [arg1 [,arg2,.....argn]]:expression`
 
 example:
