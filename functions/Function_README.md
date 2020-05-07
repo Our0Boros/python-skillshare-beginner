@@ -4,12 +4,13 @@ Functions
 *	syntex:	def func_name (args):
 **	the function can work with 0 arguments
 
-	example:	def printme(str):
-				"""This is a documentation string or 'docstring' for short"""
-				print(str)
+	example:
+	def printme(str):
+		"""This is a documentation string or 'docstring' for short"""
+		print(str)
 			
-			str = 'Hello World'
-			printme(str)
+		str = 'Hello World'
+		printme(str)
 	
 	The output will be: Hello World
 	
