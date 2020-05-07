@@ -103,30 +103,34 @@ Age: 35
   - You may need to process a function for more arguments than you specified while defining the function.
   - These arguments are called variable-length arguments and are not named in the function definition,<br>
 	unlike required and default arguments.
-**	An asterisk (*) is placed before the variable name that holds the values of all non-keyword variable arguments.
-*	syntex:	
-				def functionname([formal_args,] *var_args_tuple ):
-				   "function_docstring"
-				   function_suite
-				   return [expression]
+- An asterisk (*) is placed before the variable name that holds the values of all non-keyword variable arguments.
+* syntex:
+```
+def functionname([formal_args,] *var_args_tuple ):
+	"function_docstring"
+	function_suite
+	return [expression]
+```
 
-	example:	def printinfo( arg1, *vartuple ):
-				   "This prints a variable passed arguments"
-				   print("Output is: ")
-				   print(arg1)
-				   for var in vartuple:
-					  print(var)
-				   return;
-
-				# Now you can call printinfo function
-				printinfo(10)
-				printinfo(70, 60, 50)
-	
-	The output will be:	10
-	
-	The output will be:	70
-						60
-						50
+##### example:
+```
+def printinfo( arg1, *vartuple ):
+	"This prints a variable passed arguments"
+	print("Output is: ")
+	print(arg1)
+	for var in vartuple:
+		print(var)
+		
+	printinfo(10)
+	printinfo(70, 60, 50)
+```
+The output will be: `10`
+The output will be:
+```
+70
+60
+50
+```
 
 
 The Anonymous Functions (Lambda)
