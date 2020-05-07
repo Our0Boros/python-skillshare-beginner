@@ -47,7 +47,7 @@ def printme( str ):
   - Keyword arguments are related to the function calls.
   - When you use keyword arguments in a function call, the caller identifies the arguments by the parameter name.
   - If the name of the parameters in the function call is the same as in writing the function, than the order does not matter
-*	syntex:	def func_name(arg1, arg2, ...):
+*	syntex:	`def func_name(arg1, arg2, ...):`
 
 ##### example_1:
 ```
@@ -81,7 +81,7 @@ age: 50
   - A default argument is an argument that assumes a default value<br>
   if a value is not provided in the function call for that argument.
 
-example:
+##### example:
 ```
 def printinfo( name, age = 35 ):
 	"This prints a passed info into this function"
@@ -104,7 +104,7 @@ Age: 35
   - These arguments are called variable-length arguments and are not named in the function definition,<br>
 	unlike required and default arguments.
 - An asterisk (*) is placed before the variable name that holds the values of all non-keyword variable arguments.
-* syntex:
+- syntex:
 ```
 def functionname([formal_args,] *var_args_tuple ):
 	"function_docstring"
