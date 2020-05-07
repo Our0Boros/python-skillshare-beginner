@@ -11,10 +11,15 @@
 *	syntex: `import func_name_in_module from module_name`
 *	use:	`func_name_in_module(func_args)`
 
+#### Module alias
+-	We can call a module by different name (alias) instead of the original name
+-	This can make our life easier at calling the module in our main program
+* syntex: 'import module_name as module_alias'
+
 #### Function alias
 - We can call a function by different name (alias) instead of the original name
   - This can help us in cases:
     - the orginal function name is too long or complicated
     - there is already a function in that name
     - etc...
-- syntex: `import func_name_in_module from module_name as alias_name`
+- syntex: `import func_name_in_module from module_name as func_alias`
