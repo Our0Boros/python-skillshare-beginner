@@ -1,24 +1,24 @@
 ## Functions
 
-##### Function
+#### Function
 -	A function is a block of organized, reusable code that is used to perform a single, related action. 
 -	Functions provide better modularity for your application and a high degree of code reusing.
 *	syntex:	def func_name (args):
 **	the function can work with 0 arguments
 
-	example:
-	
+##### example:
+	```
 	def printme(str):
 		"""This is a documentation string or 'docstring' for short"""
 		print(str)
 			
 		str = 'Hello World'
 		printme(str)
-	
+	```
 	The output will be: Hello World
 	
 	
-##### Function Arguments
+#### Function Arguments
 -	You can call a function by using the following types of formal arguments:
 
 **	Required arguments
