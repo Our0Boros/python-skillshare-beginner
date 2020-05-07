@@ -106,13 +106,16 @@ While Loop				|	while True: (CR LF - indent)	number += 1
 break, continue, and pass		|	if (num == 5):	(CR LF - indent)	break
 					|
 Function				|	def printme(str):
-					|
+
 **	Required arguments
 **	Keyword arguments
 **	Default arguments
 	*	Optional arguments
 **	Variable-length arguments
-
+					|
+import module 			|	import module_name (.py file)
+					|
+import function			|	from module_name import func_name
 
 var_name = "String"
 print(var_name)
