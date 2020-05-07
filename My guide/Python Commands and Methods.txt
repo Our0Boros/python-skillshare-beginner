@@ -1075,7 +1075,7 @@ Import Module
 
 Import Function
 -	just like importing an entire module, we can also import a specific functions from a module
-*	syntex: import func_name_in_module from module_name
+*	syntex: from  module_name import func_name_in_module
 *	use:	func_name_in_module(func_args)
 
 
@@ -1099,4 +1099,4 @@ Function alias
 	-	the orginal function name is too long or complicated
 	-	there is already a function in that name
 	-	etc...
-*	syntex: import func_name_in_module from module_name as func_alias
+*	syntex: from module_name import func_name_in_module as func_alias
