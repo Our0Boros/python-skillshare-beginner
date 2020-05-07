@@ -70,33 +70,37 @@ def printinfo( name, age ):
 
 	printinfo(age=50, name="miki")
 ```
-The output will be:	`Name: miki`<br>
-			<tab><PRE><pre> `age: 50`
+The output will be:
+```
+Name: miki
+age: 50
+```
 
 
--	Default arguments
-**	A default argument is an argument that assumes a default value if a value 
-	is not provided in the function call for that argument.
+- Default arguments
+  - A default argument is an argument that assumes a default value if a value is not provided in the function call for that argument.
 
-	example:	def printinfo( name, age = 35 ):
-				   "This prints a passed info into this function"
-				   print("Name: " + name)
-				   print ("Age: " +  age)
+example:
+```
+def printinfo( name, age = 35 ):
+	"This prints a passed info into this function"
+	print("Name: " + name)
+	print ("Age: " +  age)
 
-				printinfo(age=50, name="miki")
-				printinfo(name="miki")
-	
-	The output will be:
-	```
-	Name: miki
-	Age: 50
-	Name: miki
-	Age: 35
-	```
+	printinfo(age=50, name="miki")
+	printinfo(name="miki")
+```
+The output will be:
+```
+Name: miki
+Age: 50
+Name: miki
+Age: 35
+```
 
--	Variable-length arguments
-**	You may need to process a function for more arguments than you specified while defining the function.
-**	These arguments are called variable-length arguments and are not named in the function definition,
+- Variable-length arguments
+  - You may need to process a function for more arguments than you specified while defining the function.
+  - These arguments are called variable-length arguments and are not named in the function definition,<br>
 	unlike required and default arguments.
 **	An asterisk (*) is placed before the variable name that holds the values of all non-keyword variable arguments.
 *	syntex:	
