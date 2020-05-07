@@ -23,10 +23,10 @@ Hello World!
 #### Function Arguments
 -	You can call a function by using the following types of formal arguments:
 
-**	Required arguments
-**	Keyword arguments
-**	Default arguments
-**	Variable-length arguments
+**	Required arguments<br>
+**	Keyword arguments<br>
+**	Default arguments<br>
+**	Variable-length arguments<br>
 
 -	Required arguments
 **	Required arguments are the arguments passed to a function in correct positional order.
