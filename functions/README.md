@@ -3,7 +3,7 @@
 ### Function
 - A function is a block of organized, reusable code that is used to perform a single, related action. 
 - Functions provide better modularity for your application and a high degree of code reusing.
-*	syntex:	def func_name (args):<br>
+- syntex: `def func_name (args):`<br>
   - the function can work with 0 arguments
 
 ##### example:
