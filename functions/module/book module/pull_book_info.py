@@ -2,7 +2,7 @@
 ### Author: Omer Goder
 ### Pulling book information
 
-# Creating a list of books
+# Creating a list of books (list of dicionaries)
 
 from book_functions import books_available, author_info
 
@@ -10,7 +10,7 @@ book_1 = {'name' : 'winds of change', 'author' : 'peter hannessy', 'publisher' :
 book_2 = {'name' : 'introduction to multimodal analisys', 'author' : 'per ledin', 'publisher' : 'blumsbury'}
 books = [book_1, book_2]
 
-
+# Creating a dictionary of authors books (dictionary of lists)
 authors = {'peter hannessy' : ['winds of change', 
 'the prime minister', 'having it so good', 
 'white hall', 'the cabinet'],
