@@ -1,10 +1,6 @@
-# 1
-## 2
-### 3
-#### 4
-##### 5
-###### 6
-Functions
+## Functions
+
+##### Function
 -	A function is a block of organized, reusable code that is used to perform a single, related action. 
 -	Functions provide better modularity for your application and a high degree of code reusing.
 *	syntex:	def func_name (args):
@@ -22,7 +18,7 @@ Functions
 	The output will be: Hello World
 	
 	
-Function Arguments
+##### Function Arguments
 -	You can call a function by using the following types of formal arguments:
 
 **	Required arguments
@@ -34,12 +30,15 @@ Function Arguments
 **	Required arguments are the arguments passed to a function in correct positional order.
 **	Here, the number of arguments in the function call should match exactly with the function definition.
 
-	example:	def printme( str ):
-				   "This prints a passed string into this function"
-				   print(str)
+###### example:	
+```
+def printme( str ):
+   """This prints a passed string into this function"""
+   print(str)
 				
-				str = 'Hello World!!!'
-				printme(str)
+   str = 'Hello World!!!'
+   printme(str)
+```
 
 
 -	Keyword arguments
