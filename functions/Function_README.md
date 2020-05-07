@@ -5,6 +5,7 @@ Functions
 **	the function can work with 0 arguments
 
 	example:
+	
 	def printme(str):
 		"""This is a documentation string or 'docstring' for short"""
 		print(str)
