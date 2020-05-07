@@ -42,7 +42,7 @@ def printme( str ):
    printme(str)
 ```
 
-<br>
+
 #### Keyword arguments
   - Keyword arguments are related to the function calls.
   - When you use keyword arguments in a function call, the caller identifies the arguments by the parameter name.
@@ -151,45 +151,47 @@ print_kwargs(Pi = 3.141592654, avogadro = 6.0221*10**23, string = 'Hello World!!
 ```
 
 
-The Anonymous Functions (Lambda)
--	These functions are called anonymous because they are not declared in the standard manner by using the def keyword. 
--	You can use the lambda keyword to create small anonymous functions.
+#### The Anonymous Functions (Lambda)
+- These functions are called anonymous because they are not declared in the standard manner by using the def keyword. 
+- You can use the lambda keyword to create small anonymous functions.
+- Lambda forms can take any number of arguments but return just one value in the form of an expression. 
+- They cannot contain commands or multiple expressions.
+- An anonymous function cannot be a direct call to print because lambda requires an expression
 
--	Lambda forms can take any number of arguments but return just one value in the form of an expression. 
-
--	They cannot contain commands or multiple expressions.
-
--	An anonymous function cannot be a direct call to print because lambda requires an expression
-
--	Lambda functions have their own local namespace and cannot access variables other than those 
+- Lambda functions have their own local namespace and cannot access variables other than those<br>
 	in their parameter list and those in the global namespace.
 	
-*	syntax:	syntax of lambda functions contains only a single statement, which is as follows:
-			lambda [arg1 [,arg2,.....argn]]:expression
+- syntax:<br>syntax of lambda functions contains only a single statement, which is as follows:
+`lambda [arg1 [,arg2,.....argn]]:expression`
 
-	example:	sum = lambda num_1, num_2: num_1 + num_2
-				print(sum(10,5))
+example:
+```
+sum = lambda num_1, num_2: num_1 + num_2
+print(sum(10,5))
+```
 	
-	The output will be: 15
+The output will be: `15`
 
 
 The return Statement
--	The statement return [expression] exits a function, optionally passing back an expression to the caller. 
--	A return statement with no arguments is the same as return None (or no return at all).
-*	syntex:	return arg
+- The statement return [expression] exits a function, optionally passing back an expression to the caller. 
+- A return statement with no arguments is the same as return None (or no return at all).
+- syntex: `return arg`
 
-	example:	def power(num1, num2):
-					po = num1 ** num2
-					return po
+example:
+```
+def power(num1, num2):
+	po = num1 ** num2
+	return po
 				
-				po = power(10,3)
-				print(po)
-	
-	The output will be: 1000
+po = power(10,3)
+print(po)
+```
+The output will be: `1000`
 
 
-Global vs. Local variables
--	Variables that are defined inside a function body have a local scope, and those defined outside have a global scope.
--	This means that local variables can be accessed only inside the function in which they are declared, 
-	whereas global variables can be accessed throughout the program body by all functions. 
--	When you call a function, the variables declared inside it are brought into scope.
+#### Global vs. Local variables
+- Variables that are defined inside a function body have a local scope, and those defined outside have a global scope.
+- This means that local variables can be accessed only inside the function in which they are declared,<br>
+ whereas global variables can be accessed throughout the program body by all functions. 
+- When you call a function, the variables declared inside it are brought into scope.
