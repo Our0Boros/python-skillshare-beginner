@@ -113,9 +113,9 @@ Function				|	def printme(str):
 	*	Optional arguments
 **	Variable-length arguments
 					|
-import module 			|	import module_name (.py file)
+import module 				|	import module_name (.py file)
 					|
-import function			|	from module_name import func_name
+import function				|	from module_name import func_name
 
 var_name = "String"
 print(var_name)
