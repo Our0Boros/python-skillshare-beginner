@@ -21,7 +21,7 @@ class Class_name():
 ```
 
 
-example:
+##### example:
 ```
 class  Book(): #Capitalize names refer to a class in python
 	"""A class to creat a book."""
@@ -54,3 +54,18 @@ Price: $14.99
 Publisher: virgin books.
 ```
 
+#### The __init__ method
+- `__init__` is one of the reserved methods in Python. 
+- In object oriented programming, it is known as a constructor. 
+- The `__init__` method can be called when an object is created from the class, <br>
+and access is required to initialize the attributes of the class.
+- syntex: `def __init__(self, arg_1, arg_2, ...):`
+
+##### example:
+```
+def __init__(self, name, price, publisher):
+		"""Initialize the name, price, and publisher."""
+		self.name = name
+		self.price = price
+		self.publisher = publisher
+```
