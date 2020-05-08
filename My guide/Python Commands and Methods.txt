@@ -116,6 +116,12 @@ Function				|	def printme(str):
 import module 				|	import module_name (.py file)
 					|
 import function				|	from module_name import func_name
+					|
+Class					|	class Books():
+					|
+__init__ method				|	def __init__(self, name, price, publisher):
+					|
+Class - Default Values			|	self.arg_1 = default_val
 
 var_name = "String"
 print(var_name)
