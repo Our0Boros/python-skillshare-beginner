@@ -78,5 +78,5 @@ def __init__(self, name, price, publisher):
 - We can change the class atrributes values after
 * syntex (dot natation): instance.attribute = new_val
 	
-example: 
-`my_new_ereader.library_count = 36 # direct modification using dot notation`
+##### example:
+```my_new_ereader.library_count = 36 # direct modification using dot notation```
