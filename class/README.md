@@ -80,3 +80,12 @@ def __init__(self, name, price, publisher):
 	
 ##### example:
 ```my_new_ereader.library_count = 36 # direct modification using dot notation```
+
+- We can modify the class atrributes values in a method of the class
+
+##### example:
+```
+def update_library_count(self, ebooks_number):
+	"""Set the amount of ebooks in the library"""
+	self.library_count = ebooks_number
+```
