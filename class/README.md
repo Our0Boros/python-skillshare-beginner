@@ -54,3 +54,5 @@ Price: $14.99
 Publisher: virgin books.
 ```
 
+#### The __init__ method
+- __init__ is one of the reserved methods in Python. In object oriented programming, it is known as a constructor. The __init__ method can be called when an object is created from the class, and access is required to initialize the attributes of the class.
