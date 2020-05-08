@@ -69,3 +69,7 @@ def __init__(self, name, price, publisher):
 		self.price = price
 		self.publisher = publisher
 ```
+
+#### Set deafault values
+- We can set default values to arguments within the `__init__` method
+- syntex: `self.arg_1 = 'default_val'`
