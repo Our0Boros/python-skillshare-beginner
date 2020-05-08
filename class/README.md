@@ -73,3 +73,10 @@ def __init__(self, name, price, publisher):
 #### Set deafault values
 - We can set default values to arguments within the `__init__` method
 - syntex: `self.arg_1 = 'default_val'`
+
+#### Class - Modify Attributes
+- We can change the class atrributes values after
+* syntex (dot natation): instance.attribute = new_val
+	
+##### example:
+```my_new_ereader.library_count = 36 # direct modification using dot notation```
