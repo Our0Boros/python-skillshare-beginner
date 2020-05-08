@@ -1100,3 +1100,26 @@ Function alias
 	-	there is already a function in that name
 	-	etc...
 *	syntex: from module_name import func_name_in_module as func_alias
+
+
+Class
+-	Classes provide a means of bundling data and functionality together. 
+-	Creating a new class creates a new type of object, allowing new instances of that type to be made. 
+-	Each class instance can have attributes attached to it for maintaining its state. 
+-	Class instances can also have methods (defined by its class) for modifying its state.
+*	syntex:	
+			class Class_name():
+				"""docstring of the class"""
+				
+				def __init__(self, arg_1, arg_2, ...):
+					"""Initialize all arguments"""
+					self.arg_1 = arg_1
+					self.arg_2 = arg_2
+					self...
+				
+				def method_1(args):
+					"""docstring for method_1"""
+					method_actions
+			
+			
+**	a class name must start with a capital letter
