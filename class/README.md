@@ -94,3 +94,6 @@ def update_library_count(self, ebooks_number):
 - Inheritance allows us to define a class that inherits all the methods and properties from another class.
 - Parent class is the class being inherited from, also called base class.
 - Child class is the class that inherits from another class, also called derived class.
+- Child class must come after the parent class
+
+- the `__init__` method in a child class
