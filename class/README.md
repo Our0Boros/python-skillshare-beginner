@@ -95,5 +95,8 @@ def update_library_count(self, ebooks_number):
 - Parent class is the class being inherited from, also called base class.
 - Child class is the class that inherits from another class, also called derived class.
 - Child class must come after the parent class
+- By default the child (derived) inherits the aruments and methods from the parent (base)
 <br>
-- the `__init__` method in a child class
+
+##### the `__init__` method in a child class
+
