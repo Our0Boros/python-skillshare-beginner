@@ -105,4 +105,4 @@ def update_library_count(self, ebooks_number):
 clears the arguments from the parent (base) class
 - **Note:** The child's `__init__()` method overrides the inheritance of the parent's `__init__()` method.
 <br><br>
--To keep the inheritance of the parent's`__init__()` method, add a call to the parent's `__init__()` method:
+- To keep the inheritance of the parent's`__init__()` method, add a call to the parent's `__init__()` method:
