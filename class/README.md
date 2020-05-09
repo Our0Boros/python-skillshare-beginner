@@ -106,3 +106,30 @@ clears the arguments from the parent (base) class
 - **Note:** The child's `__init__()` method overrides the inheritance of the parent's `__init__()` method.
 <br><br>
 - To keep the inheritance of the parent's`__init__()` method, add a call to the parent's `__init__()` method:
+
+##### example:
+```
+class Person:
+  def __init__(self, fname, lname):
+    self.firstname = fname
+    self.lastname = lname
+
+class Student(Person):
+  def __init__(self, fname, lname):
+    Person.__init__(self, fname, lname)
+```
+
+#### the super() Function
+- Python also has a super() function that will make the child class inherit all the methods and properties from its parent:
+
+##### example:
+```
+class Person:
+  def __init__(self, fname, lname):
+    self.firstname = fname
+    self.lastname = lname
+
+class Student(Person):
+  def __init__(self, fname, lname):
+    super().__init__(fname, lname)
+```
