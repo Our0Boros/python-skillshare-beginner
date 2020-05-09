@@ -59,6 +59,7 @@ Publisher: virgin books.
 - In object oriented programming, it is known as a constructor. 
 - The `__init__` method can be called when an object is created from the class, <br>
 and access is required to initialize the attributes of the class.
+- **Note:** The `__init__()` method is called automatically every time the class is being used to create a new object.
 - syntex: `def __init__(self, arg_1, arg_2, ...):`
 
 ##### example:
@@ -96,7 +97,10 @@ def update_library_count(self, ebooks_number):
 - Child class is the class that inherits from another class, also called derived class.
 - Child class must come after the parent class
 - By default the child (derived) inherits the aruments and methods from the parent (base)
+- syntex: `class Child_class(Parent_class):
 <br>
 
 ##### the `__init__` method in a child class
+- The `__init__` method in a derived (child) class, by it self<br>
+clears the arguments from the parent class
 
