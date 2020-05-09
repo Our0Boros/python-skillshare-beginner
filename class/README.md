@@ -102,5 +102,7 @@ def update_library_count(self, ebooks_number):
 
 ##### the `__init__` method in a child class
 - The `__init__` method in a derived (child) class, by it self<br>
-clears the arguments from the parent class
-
+clears the arguments from the parent (base) class
+- **Note:** The child's `__init__()` method overrides the inheritance of the parent's `__init__()` method.
+<br><br>
+-To keep the inheritance of the parent's`__init__()` method, add a call to the parent's `__init__()` method:
