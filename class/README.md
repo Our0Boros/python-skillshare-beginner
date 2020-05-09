@@ -9,10 +9,10 @@
 class Class_name():
 	"""docstring of the class"""
 				
-	def __init__(self, arg_1, arg_2, ...):
-		"""Initialize all arguments"""
-		self.arg_1 = arg_1
-		self.arg_2 = arg_2
+	def __init__(self, att_1, att_2, ...):
+		"""Initialize all attributes"""
+		self.att_1 = att_1
+		self.att_2 = att_2
 		self...
 				
 	def method_1(args):
