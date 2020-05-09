@@ -15,7 +15,7 @@ class Class_name():
 		self.att_2 = att_2
 		self...
 				
-	def method_1(args):
+	def method_1(self, args):
 		"""docstring for method_1"""
 		method_actions
 ```
