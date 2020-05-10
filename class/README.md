@@ -140,7 +140,6 @@ class Student(Person):
 as the method we would like to replace in the parent class
 
 ##### example:
-<dl>
 ```
 class Ereader(): # Parent class
 	"""A class to represent an ereader"""
@@ -168,9 +167,8 @@ class KindleFire(Ereader): # Child class
 
 		super().__init__(make, model, backlight, battery, screen_type)
 
-	def describe_backlight(self): <dt># This will override the same method name in the parent class</dt>
+	def describe_backlight(self): # This will override the same method name in the parent class
 		"""The kindle fire does not have a backlight"""
 		print('The color screen lets you read in the dark')
 
 ```
-</dl>
