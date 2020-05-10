@@ -167,7 +167,7 @@ class KindleFire(Ereader): # Child class
 
 		super().__init__(make, model, backlight, battery, screen_type)
 
-	def describe_backlight(self): # This will override the same method name in the parent class
+	def describe_backlight(self): **# This will override the same method name in the parent class**
 		"""The kindle fire does not have a backlight"""
 		print('The color screen lets you read in the dark')
 ```
