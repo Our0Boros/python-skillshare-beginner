@@ -124,6 +124,8 @@ __init__ method				|	def __init__(self, name, price, publisher):
 Class - Default Values			|	self.arg_1 = default_val
 					|
 Class - Modify Attributes		|	my_new_ereader.library_count = 36 # direct modification using dot notation
+					|
+Class - Override method			|	
 
 var_name = "String"
 print(var_name)
