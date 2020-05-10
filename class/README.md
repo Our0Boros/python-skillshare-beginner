@@ -133,3 +133,42 @@ class Student(Person):
   def __init__(self, fname, lname):
     super().__init__(fname, lname)
 ```
+
+#### Override methods
+- Python enables a child class to override a method from the parent class
+- This can be done by naming the method in the child class in the exact same name<br>
+as the method we would like to replace in the parent class
+
+##### example:
+```
+class Ereader(): # Parent class
+	"""A class to represent an ereader"""
+
+	def __init__(self, make, model, backlight, battery, screen_type):
+		"""Initialize the attributes to describe an ereader"""
+		self.make = make
+		self.model = model
+		self.backlight = backlight
+		self.battery = battery
+		self.screen_type = screen_type
+		self.library_count = 0 # Setting a default value
+	
+	def describe_backlight(self):
+		"""Descibe the backlight of our ereader"""
+		
+		
+class KindleFire(Ereader): # Child class
+	"""Represents aspects of an ereader specific to a kindle fire
+	Then itialize attributes specific to a kidnle fire"""
+
+	def __init__(self, make, model, backlight, battery, screen_type, screen_resolution = '1280 * 800 px'):
+		"""initialize attributes for the kindle fire"""
+		self.screen_resolution = screen_resolution
+
+		super().__init__(make, model, backlight, battery, screen_type)
+
+	def describe_backlight(self): # This will override the same method name in the parent class
+		"""The kindle fire does not have a backlight"""
+		print('The color screen lets you read in the dark')
+		print("The back light of this ereader allows you to read in the dark")
+```
