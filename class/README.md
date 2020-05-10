@@ -155,7 +155,7 @@ class Ereader(): # Parent class
 	
 	def describe_backlight(self):
 		"""Descibe the backlight of our ereader"""
-		
+		print("The back light of this ereader allows you to read in the dark")		
 		
 class KindleFire(Ereader): # Child class
 	"""Represents aspects of an ereader specific to a kindle fire
@@ -170,5 +170,4 @@ class KindleFire(Ereader): # Child class
 	def describe_backlight(self): # This will override the same method name in the parent class
 		"""The kindle fire does not have a backlight"""
 		print('The color screen lets you read in the dark')
-		print("The back light of this ereader allows you to read in the dark")
 ```
