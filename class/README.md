@@ -141,6 +141,7 @@ as the method we would like to replace in the parent class
 
 ##### example:
 ```
+<dl>
 class Ereader(): # Parent class
 	"""A class to represent an ereader"""
 
@@ -170,4 +171,5 @@ class KindleFire(Ereader): # Child class
 	def describe_backlight(self): <dt># This will override the same method name in the parent class</dt>
 		"""The kindle fire does not have a backlight"""
 		print('The color screen lets you read in the dark')
+</dl>
 ```
