@@ -233,3 +233,16 @@ Glass: Gorilla 8
 Size: 10".
 This is a color screen.
 ```
+
+#### Import class
+- After we're done writing and checking that our class is working correctly,<br>
+	we can save is as a module to be used by other programs
+* syntex: from module_name import class_name
+
+##### example:
+```
+from ereader_class import Ereader
+
+my_ereader = Ereader('amazon', 'kindle fire', 'backlight', '12 hour battery life', 'color screen')
+my_ereader.read_library_count()
+```
