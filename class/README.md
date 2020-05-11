@@ -237,7 +237,9 @@ This is a color screen.
 #### Import class
 - After we're done writing and checking that our class is working correctly,<br>
 	we can save is as a module to be used by other programs
-* syntex: from module_name import class_name
+* syntex: `from module_name import class_name`
+- We can import multiple classes from the some module<br>
+`from module_name import Class_1, Class_2`
 
 ##### example:
 ```
