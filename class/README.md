@@ -237,12 +237,26 @@ This is a color screen.
 #### Import class
 - After we're done writing and checking that our class is working correctly,<br>
 	we can save is as a module to be used by other programs
-* syntex: from module_name import class_name
+* syntex: `from module_name import class_name`
+- We can import multiple classes from the some module<br>
+`from module_name import Class_1, Class_2`
 
 ##### example:
 ```
 from ereader_class import Ereader
 
 my_ereader = Ereader('amazon', 'kindle fire', 'backlight', '12 hour battery life', 'color screen')
+my_ereader.read_library_count()
+```
+
+#### Import a whole module
+- Just like the import module in functions, we can import an entire module<br>
+and then use 'dot notation' to call the classes from the module
+
+##### example: (same as above with 'dot notation')
+```
+import ereader_class 
+
+my_ereader = ereader_class.Ereader('amazon', 'kindle fire', 'backlight', '12 hour battery life', 'color screen')
 my_ereader.read_library_count()
 ```
