@@ -253,10 +253,18 @@ my_ereader.read_library_count()
 - Just like the import module in functions, we can import an entire module<br>
 and then use 'dot notation' to call the classes from the module
 
-##### example: (same as above with 'dot notation')
+##### example_1: (same as above with 'dot notation')
 ```
 import ereader_class 
 
 my_ereader = ereader_class.Ereader('amazon', 'kindle fire', 'backlight', '12 hour battery life', 'color screen')
+my_ereader.read_library_count()
+```
+
+##### example: (same, but with importing all the classes within our module)
+```
+from ereader_class import *
+
+my_ereader = Ereader('amazon', 'kindle fire', 'backlight', '12 hour battery life', 'color screen')
 my_ereader.read_library_count()
 ```
