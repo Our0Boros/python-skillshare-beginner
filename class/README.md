@@ -182,7 +182,7 @@ for example: a tablet will have several multiple attributes such as size, color,
 but screen type will also have different attributes such as glass grade, color/bw, screen size, ...
 
 ##### example:
-```ruby
+```
 class Tablet():
 	"""This will be the class that uses the attribute."""
 
