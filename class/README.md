@@ -175,8 +175,8 @@ class KindleFire(Ereader): # Child class
 
 
 #### Using a class as an attribute
-- There will be cases where we will have to many atrributes for a class
-- In those cases we could use another class to hold the attributes for the main class
+- There will be cases where we will have to many atrributes for a class<br>
+In those cases we could use another class to hold the attributes for the main class
 
 for example: a tablet will have several multiple attributes such as size, color, battery, screen type<br>
 but screen type will also have different attributes such as glass grade, color/bw, screen size, ...
