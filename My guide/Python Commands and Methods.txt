@@ -1300,7 +1300,7 @@ Import class
 -	After we're done writing and checking that our class is working correctly,
 	we can save is as a module to be used by other programs
 *	syntex: from module_name import class_name
-
+**	We can import multiple classes from the some module:	from module_name import Class_1, Class_2
 	example:
 			from ereader_class import Ereader
 			
