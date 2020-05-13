@@ -9,3 +9,13 @@
 
 #### with keyword
 - The python keyword with in front of the open function closes the file once access to it is no longer required
+
+#### read method
+- This method reads the entire content of the file and stores it as one long string
+
+##### example:
+```
+with open('Python Commands and Methods.txt') as object_file:
+	content = object_file.read()
+	print(content.strip())
+```
