@@ -19,3 +19,13 @@ with open('Python Commands and Methods.txt') as object_file:
 	content = object_file.read()
 	print(content.strip())
 ```
+#### File path
+- If the file we would like to work with is not in the same directory as the program we can use the file path
+- The file path tells the program where to find the file
+
+##### example:
+```
+file_path = 'C:/Users/owner/Documents/GitHub/python-skillshare-beginner/My guide/Python Commands and Methods.txt'
+
+with open(file_path) as object_file:
+```
