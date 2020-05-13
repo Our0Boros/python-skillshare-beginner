@@ -62,7 +62,7 @@ for line in lines:
 
 "w" - Write - will create a file if the specified file does not exist
 
-##### eaxmple 1:
+##### example 1:
 ```
 filename = 'programming.txt'
 
