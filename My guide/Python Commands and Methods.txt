@@ -1364,3 +1364,29 @@ example:
 
 		for line in lines:
 			print(line)
+
+
+Create a New File
+-	To create a new file in Python, use the open() method, with one of the following parameters:
+
+"x" - Create - will create a file, returns an error if the file exist
+
+"a" - Append - will create a file if the specified file does not exist
+
+"w" - Write - will create a file if the specified file does not exist
+
+	example 1:
+			filename = 'programming.txt'
+
+			with open(filename, 'w') as file_object:
+				file_object.write("Hello Everyone\n")
+
+			with open(filename, 'a') as file_object:
+				file_object.write("And Welcome")
+	example 2:
+			filename = 'User Input.txt'
+
+			user_input = input('Enter new line to the file')
+
+			with open(filename, 'a') as file_object:
+				file_object.write(user_input + "\n")
