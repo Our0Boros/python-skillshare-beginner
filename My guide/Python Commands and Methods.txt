@@ -130,6 +130,8 @@ Class - Override method			|
 Using a class as an attribute		|
 					|
 Import class				|	from file_name import class_name
+					|
+Files					|
 
 var_name = "String"
 print(var_name)
@@ -1316,3 +1318,22 @@ example: (same as above with 'dot notation')
 
 			my_ereader = ereader_class.Ereader('amazon', 'kindle fire', 'backlight', '12 hour battery life', 'color screen')
 			my_ereader.read_library_count()
+
+
+Files
+example:
+		with open('Python Commands and Methods.txt') as object_file:
+			content = object_file.read()
+			print(content.strip())
+	
+Open function
+-	In order to do any work with a file we first need to open it to access it
+-	The open function need just one argument (the file name) to open it
+-	The open fiunction returns an object representing the file (file_object)
+-	Python looks for the file in the same directory it's being stored
+	so we need to make sure that all our programs and text files are in the same directory
+	
+with keyword
+-	The python keyword with in front of the open function closes the file once access to it is no longer required
+read method
+-	This method reads the entire content of the file and stores it as one long string
