@@ -9,5 +9,5 @@ except ZeroDivisionError: # Only accept ZeroDivisionError
 
 try:
 	print(5/0)
-except:
+except: # Accept any error
 	print('There is some error')
