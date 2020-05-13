@@ -39,3 +39,16 @@ with open(file_path+file_name) as object_file:
 	for line in object_file:
 		print(line.strip())
 ```
+
+#### Creat a list from a file (.readlines() function)
+- The `readlines()` function in Python takes a text file as input <br>
+and stores each line in the file as a separate element in a list.
+
+##### example:
+```
+with open(file_path) as object_file:
+	lines = object_file.readlines()
+
+for line in lines:
+	print(line)
+```
