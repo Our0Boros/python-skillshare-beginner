@@ -1337,3 +1337,11 @@ with keyword
 -	The python keyword with in front of the open function closes the file once access to it is no longer required
 read method
 -	This method reads the entire content of the file and stores it as one long string
+
+File path
+-	If the file we would like to work with is not in the same directory as the program we can use the file path
+	The file path tells the program where to find the file
+example:
+		file_path = 'C:/Users/owner/Documents/GitHub/python-skillshare-beginner/My guide/Python Commands and Methods.txt'
+
+		with open(file_path) as object_file:
