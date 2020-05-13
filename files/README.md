@@ -29,3 +29,13 @@ file_path = 'C:/Users/owner/Documents/GitHub/python-skillshare-beginner/My guide
 
 with open(file_path) as object_file:
 ```
+#### Read line by line
+- We can use a for loop to run through the file line by line
+
+##### example:
+```
+
+with open(file_path+file_name) as object_file:
+	for line in object_file:
+		print(line.strip())
+```
