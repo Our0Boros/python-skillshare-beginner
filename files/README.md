@@ -83,4 +83,16 @@ with open(filename, 'a') as file_object:
 	file_object.write(user_input + "\n")
 ```
 
-[Exceptions](https://github.com/omer-goder/python-skillshare-beginner/tree/master/Exceptions)
+#### Check FileNotFoundError
+- We can use [Exceptions](https://github.com/omer-goder/python-skillshare-beginner/tree/master/Exceptions) to check if the file opens, without causing the program to crash
+
+##### example:
+```
+filename = 'somename.txt'
+
+try:
+	with open(filename) as file_object:
+		contents = file_object.read()
+except FileNotFoundError:
+	print('Sorry, the file \'' + filename + '\' could not be found.')
+```
