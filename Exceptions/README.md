@@ -7,6 +7,15 @@ and decide what to do instead
 
 #### try-except block
 - The try-except block allows us to "try" a case and if there is an error, print a message or perform actions
+- syntex:
+```
+try:
+	(test object)
+except Trackback_Error_Name: # Trackback_Error_Name is all errors by default, check examples below
+	(what to to if an error is raised)
+else: #optional
+	(what to do if an error is not raised)
+```
 
 ##### example 1:
 ```
