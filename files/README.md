@@ -82,3 +82,5 @@ user_input = input('Enter new line to the file')
 with open(filename, 'a') as file_object:
 	file_object.write(user_input + "\n")
 ```
+
+[Exceptions](https://github.com/omer-goder/python-skillshare-beginner/tree/master/Exceptions)
