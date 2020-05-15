@@ -96,3 +96,22 @@ try:
 except FileNotFoundError:
 	print('Sorry, the file \'' + filename + '\' could not be found.')
 ```
+#### Python String | split()
+- The split() method returns a list of strings after breaking the given string by the specified separator.
+- Default separator is space (' ')
+
+- Syntax :`str.split(separator, maxsplit)`
+
+##### example 1: 
+```
+str = 'hello world and welcome to the show'
+print(str.split())
+```
+Output: `['hello', 'world', 'and', 'welcome', 'to', 'the', 'show']`
+
+##### example 2:
+```
+str = 'hello world and welcome to the show'
+print(str.split(' ', 4))
+```
+Output: `['hello', 'world', 'and', 'welcome', 'to the show']`
