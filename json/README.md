@@ -34,7 +34,7 @@ import json
 The process of encoding JSON is usually called **serialization**.<br>This term refers to the transformation of data into a series of bytes (hence serial) to be stored or transmitted across a network.<br>Naturally, **deserialization** is the reciprocal process of decoding data that has been stored or delivered in the JSON standard.
 
 #### Serializing JSON
-What happens after a computer processes lots of information? It needs to take a data dump. <br>Accordingly, the json library exposes the dump() method for writing data to files. There is also a dumps() method (pronounced as “dump-s”) for writing to a Python string.
+What happens after a computer processes lots of information? It needs to take a data dump. <br>Accordingly, the json library exposes the `dump()` method for writing data to files. There is also a `dumps()` method (pronounced as “dump-s”) for writing to a Python string.
 <br><br>
 Simple Python objects are translated to JSON according to a fairly intuitive conversion.
 
@@ -84,3 +84,18 @@ json.dump(x, indent=4, separators=(". ", " = "))
 ```python
 json.dump(x, indent=4, sort_keys=True)
 ```
+
+#### Deserializing JSON
+- In the json library, you’ll find `load()` and `loads()` for turning JSON encoded data into Python objects.
+<br><br>
+Just like serialization, there is a simple conversion table for deserialization.
+
+|JSON|:arrow_right:|Python|
+|object|:arrow_right:|dict|
+|array|:arrow_right:|list|
+string	str
+number (int)	int
+number (real)	float
+true	True
+false	False
+null	None
