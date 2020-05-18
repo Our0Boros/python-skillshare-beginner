@@ -75,7 +75,8 @@ Remember, JSON is meant to be easily readable by humans, but readable syntax isn
 ```python 
 json.dump(x, indent=4)
 ```
-- separators, >default value is (", ", ": "): 
+- separators, 
+> default value is (", ", ": "): 
 ```python
 json.dump(x, indent=4, separators=(". ", " = "))
 ```
