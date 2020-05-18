@@ -39,7 +39,7 @@ What happens after a computer processes lots of information? It needs to take a 
 Simple Python objects are translated to JSON according to a fairly intuitive conversion.
 
 |Python             |JSON  |
-|-------------------|------|
+|        :---:      | :---:|
 |dict	            |object|
 |list, tuple	    |array |
 |str	            |string|
