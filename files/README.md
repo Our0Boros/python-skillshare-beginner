@@ -24,7 +24,7 @@ with open('Python Commands and Methods.txt') as object_file:
 - The file path tells the program where to find the file
 
 ##### example:
-```
+```python
 file_path = 'C:/Users/owner/Documents/GitHub/python-skillshare-beginner/My guide/Python Commands and Methods.txt'
 
 with open(file_path) as object_file:
@@ -33,7 +33,7 @@ with open(file_path) as object_file:
 - We can use a for loop to run through the file line by line
 
 ##### example:
-```
+```python
 
 with open(file_path+file_name) as object_file:
 	for line in object_file:
@@ -45,7 +45,7 @@ with open(file_path+file_name) as object_file:
 and stores each line in the file as a separate element in a list.
 
 ##### example:
-```
+```python
 with open(file_path) as object_file:
 	lines = object_file.readlines()
 
@@ -63,7 +63,7 @@ for line in lines:
 "w" - Write - will create a file if the specified file does not exist
 
 ##### example 1:
-```
+```python
 filename = 'programming.txt'
 
 with open(filename, 'w') as file_object:
@@ -74,7 +74,7 @@ with open(filename, 'a') as file_object:
 ```
 
 ##### example 2:
-```
+```python
 filename = 'User Input.txt'
 
 user_input = input('Enter new line to the file')
@@ -87,7 +87,7 @@ with open(filename, 'a') as file_object:
 - We can use [Exceptions](https://github.com/omer-goder/python-skillshare-beginner/tree/master/Exceptions) to check if the file opens, without causing the program to crash
 
 ##### example:
-```
+```python
 filename = 'somename.txt'
 
 try:
@@ -103,14 +103,14 @@ except FileNotFoundError:
 - Syntax :`str.split(separator, maxsplit)`
 
 ##### example 1: 
-```
+```python
 str = 'hello world and welcome to the show'
 print(str.split())
 ```
 Output: `['hello', 'world', 'and', 'welcome', 'to', 'the', 'show']`
 
 ##### example 2:
-```
+```python
 str = 'hello world and welcome to the show'
 print(str.split(' ', 4))
 ```
