@@ -48,3 +48,28 @@ Simple Python objects are translated to JSON according to a fairly intuitive con
 |False	            |:arrow_right:|false |
 |None	            |:arrow_right:|null  |
 
+##### A Simple Serialization Example
+Imagine you’re working with a Python object in memory that looks a little something like this:
+```pyhton
+data = {
+    "president": {
+        "name": "Zaphod Beeblebrox",
+        "species": "Betelgeusian"
+    }
+}
+```
+It is critical that you save this information to disk, so your mission is to write it to a file.
+<br><br>
+Using Python’s context manager, you can create a file called data_file.json and open it in write mode. <br>(JSON files conveniently end in a .json extension.)
+```python
+with open("data_file.json", "w") as write_file:
+    json.dump(data, write_file)
+```
+Note that dump() takes two positional arguments: 
+1. the data object to be serialized
+2. the file-like object to which the bytes will be written.
+
+#### Some Useful Keyword Arguments
+Remember, JSON is meant to be easily readable by humans, but readable syntax isn’t enough if it’s all squished together.
+- indent paremeter: `python json.dump(x, indent=4)`
+- separators, default value is (", ", ": "): `json.dumps(x, indent=4, separators=(". ", " = "))`
