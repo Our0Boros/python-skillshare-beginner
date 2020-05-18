@@ -50,7 +50,7 @@ Simple Python objects are translated to JSON according to a fairly intuitive con
 
 ##### A Simple Serialization Example
 Imagine you’re working with a Python object in memory that looks a little something like this:
-```pyhton
+```python
 data = {
     "president": {
         "name": "Zaphod Beeblebrox",
@@ -71,5 +71,5 @@ Note that dump() takes two positional arguments:
 
 #### Some Useful Keyword Arguments
 Remember, JSON is meant to be easily readable by humans, but readable syntax isn’t enough if it’s all squished together.
-- indent paremeter: `python json.dump(x, indent=4)`
+- indent paremeter: `json.dump(x, indent=4)`python
 - separators, default value is (", ", ": "): `json.dumps(x, indent=4, separators=(". ", " = "))`
