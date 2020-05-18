@@ -2,6 +2,7 @@
 
 - JSON is a syntax for storing and exchanging data
 - JSON is text, written with JavaScript object notation
+- JSON supports primitive types, like strings and numbers, as well as nested lists and objects
 - JSON - **J**ava**S**cript **O**bject **N**otation
 
 ##### example of json file
