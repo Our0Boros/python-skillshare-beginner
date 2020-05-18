@@ -71,6 +71,15 @@ Note that dump() takes two positional arguments:
 
 #### Some Useful Keyword Arguments
 Remember, JSON is meant to be easily readable by humans, but readable syntax isn’t enough if it’s all squished together.
-- indent paremeter: `json.dump(x, indent=4)`
-- separators, default value is (", ", ": "): `json.dump(x, indent=4, separators=(". ", " = "))`
-- Use the `sort_keys` parameter to specify if the result should be sorted or not: `json.dump(x, indent=4, sort_keys=True)`
+- indent paremeter: 
+```pyhton 
+json.dump(x, indent=4)
+```
+- separators, default value is (", ", ": "): 
+```pyhton
+json.dump(x, indent=4, separators=(". ", " = "))
+```
+- Use the `sort_keys` parameter to specify if the result should be sorted or not: 
+```pyhton
+json.dump(x, indent=4, sort_keys=True)
+```
