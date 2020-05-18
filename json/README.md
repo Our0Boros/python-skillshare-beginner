@@ -47,3 +47,4 @@ Simple Python objects are translated to JSON according to a fairly intuitive con
 |True	            |true  |
 |False	            |false |
 |None	            |null  |
+:arrow_right:
