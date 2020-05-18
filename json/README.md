@@ -100,3 +100,11 @@ Just like serialization, there is a simple conversion table for deserialization.
 |true           |:arrow_right:     |True    |
 |false          |:arrow_right:     |False   |
 |null           |:arrow_right:     |None    |
+
+#### A Simple Deserialization Example
+This time, imagine you’ve got some data stored on disk that you’d like to manipulate in memory. <br>
+You’ll still use the context manager, but this time you’ll open up the existing data_file.json in read mode.
+```python
+with open("data_file.json", "r") as read_file:
+    data = json.load(read_file)
+```
