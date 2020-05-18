@@ -29,3 +29,6 @@ import json
     ]
 }
 ```
+
+#### A Little Vocabulary
+The process of encoding JSON is usually called serialization.<br>This term refers to the transformation of data into a series of bytes (hence serial) to be stored or transmitted across a network.<br>Naturally, deserialization is the reciprocal process of decoding data that has been stored or delivered in the JSON standard.
