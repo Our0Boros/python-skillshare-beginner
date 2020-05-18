@@ -38,13 +38,13 @@ What happens after a computer processes lots of information? It needs to take a 
 <br><br>
 Simple Python objects are translated to JSON according to a fairly intuitive conversion.
 
-|Python             |:arrow_right:||JSON  |
-|        :---:      |    :---:    || :---:|
-|dict	            |             ||object|
-|list, tuple	    |             ||array |
-|str	            |             ||string|
-|int, long, float	|             ||number|
-|True	            |             ||true  |
-|False	            |             ||false |
-|None	            |             ||null  |
+|Python             |thing        |JSON  |
+|        :---:      |    :---:    | :---:|
+|dict	            |             |object|
+|list, tuple	    |             |array |
+|str	            |             |string|
+|int, long, float	|             |number|
+|True	            |             |true  |
+|False	            |             |false |
+|None	            |             |null  |
 
