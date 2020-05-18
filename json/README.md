@@ -90,13 +90,13 @@ json.dump(x, indent=4, sort_keys=True)
 <br><br>
 Just like serialization, there is a simple conversion table for deserialization.
 
-|JSON|:arrow_right:|Python|
-|:---:|:---:|:---:|
-|object|:arrow_right:|dict|
-|array|:arrow_right:|list|
-string	str
-number (int)	int
-number (real)	float
-true	True
-false	False
-null	None
+|JSON           |:arrow_right:     |Python  |
+|:---:          |:---:             |:---:   |
+|object         |:arrow_right:     |dict    |
+|array          |:arrow_right:     |list    |
+|string         |:arrow_right:     |str     |
+|number (int)   |:arrow_right:     |int     |
+|number (real)  |:arrow_right:     |float   |
+|true           |:arrow_right:     |True    |
+|false          |:arrow_right:     |False   |
+|null           |:arrow_right:     |None    |
