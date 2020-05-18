@@ -35,5 +35,5 @@ The process of encoding JSON is usually called **serialization**.<br>This term r
 
 #### Serializing JSON
 What happens after a computer processes lots of information? It needs to take a data dump. <br>Accordingly, the json library exposes the dump() method for writing data to files. There is also a dumps() method (pronounced as “dump-s”) for writing to a Python string.
-<br>
+<br><br>
 Simple Python objects are translated to JSON according to a fairly intuitive conversion.
