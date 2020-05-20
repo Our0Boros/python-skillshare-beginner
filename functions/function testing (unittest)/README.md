@@ -4,7 +4,7 @@
 Unit Testing is the first level of software testing where the smallest testable parts of a software are tested. <br> This is used to validate that each unit of the software performs as designed.<br>
 The unittest test framework is python’s xUnit style framework.
 
-#### test fixture:
+#### - test fixture:
 A test fixture is used as a baseline for running tests to ensure that there is a fixed environment in which tests are run so that results are repeatable.
 Examples :
 - creating temporary databases.
