@@ -15,3 +15,21 @@ A test case is a set of conditions which is used to determine whether a system u
 Test suite is a collection of testcases that are used to test a software program to show that it has some specified set of behaviours by executing the aggregated tests together.
 - #### test runner:
 A test runner is a component which set up the execution of tests and provides the outcome to the user.
+
+#### Basic Test Structure :
+unittest defines tests by the following two ways :
+
+- Manage test “fixtures” using code.
+- test itself.
+```python
+import unittest 
+  
+class SimpleTest(unittest.TestCase): 
+  
+    # Returns True or False.  
+    def test(self):         
+        self.assertTrue(True) 
+  
+if __name__ == '__main__': 
+    unittest.main() 
+```
