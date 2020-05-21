@@ -41,3 +41,61 @@ if __name__ == '__main__':
     unittest.main()
 ```
 - This last block helps to run the test by running the file through the command line.
+
+The result of this test:
+```
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+```
+- The 1 dot ".", indicates that 1 test was ran.
+
+#### Outcomes Possible :
+There are three types of possible test outcomes :
+
+- OK – This means that all the tests are passed.
+- FAIL – This means that the test did not pass and an AssertionError exception is raised.
+- ERROR – This means that the test raises an exception other than AssertionError.
+
+#### Python code to demonstrate working of unittest 
+```python
+import unittest 
+
+class TestStringMethods(unittest.TestCase): 
+	
+	def setUp(self): 
+		pass
+
+	# Returns True if the string contains 4 a. 
+	def test_strings_a(self): 
+		self.assertEqual( 'a'*4, 'aaaa') 
+
+	# Returns True if the string is in upper case. 
+	def test_upper(self):		 
+		self.assertEqual('foo'.upper(), 'FOO') 
+
+	# Returns TRUE if the string is in uppercase 
+	# else returns False. 
+	def test_isupper(self):		 
+		self.assertTrue('FOO'.isupper()) 
+		self.assertFalse('Foo'.isupper()) 
+
+	# Returns true if the string is stripped and 
+	# matches the given output. 
+	def test_strip(self):		 
+		s = 'hello world'
+		self.assertEqual(s.strip('hell'), 'o world') 
+
+	# Returns true if the string splits and matches 
+	# the given output. 
+	def test_split(self):		 
+		s = 'hello world'
+		self.assertEqual(s.split(), ['hello', 'world']) 
+		with self.assertRaises(TypeError): 
+			s.split(2) 
+
+if __name__ == '__main__': 
+	unittest.main() 
+```
