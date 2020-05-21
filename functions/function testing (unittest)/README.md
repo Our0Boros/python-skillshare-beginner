@@ -7,8 +7,8 @@ The unittest test framework is python’s xUnit style framework.
 - #### test fixture:
 A test fixture is used as a baseline for running tests to ensure that there is a fixed environment in which tests are run so that results are repeatable.
 Examples :
-       - creating temporary databases.
-       - starting a server process.
+    - creating temporary databases.
+    - starting a server process.
 - #### test case:
 A test case is a set of conditions which is used to determine whether a system under test works correctly.
 - #### test suite:
