@@ -33,3 +33,11 @@ class SimpleTest(unittest.TestCase):
 if __name__ == '__main__': 
     unittest.main() 
 ```
+This is the basic test code using unittest framework, which is having a single test. <br>
+This test() method will fail if TRUE is ever FALSE.
+
+```python
+if __name__ == '__main__':
+    unittest.main()
+```
+- The last block helps to run the test by running the file through the command line.
