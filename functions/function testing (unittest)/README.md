@@ -99,3 +99,39 @@ class TestStringMethods(unittest.TestCase):
 if __name__ == '__main__': 
 	unittest.main() 
 ```
+The above code is a short script to test 5 string methods. <br>
+`unittest.TestCase` is used to create test cases by subclassing it. <br>
+The last block of the code at the bottom allows us to run all the tests just by running the file.
+
+- The output of those tests:
+```
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK
+```
+##### Basic terms used in the code :
+
+- assertEqual() – This statement is used to check if the result obtained is equal to the expected result.
+- assertTrue() / assertFalse() – This statement is used to verify if a given statement is true or false.
+- assertRaises() – This statement is used to raise a specific exception.
+
+Description of tests :
+
+- test_strings_a
+This test is used to test the property of string in which a character say ‘a’ multiplied by a number say ‘x’ gives the output as x times ‘a’. <br>
+The `assertEqual()` statement returns true in this case if the result matches the given output.
+- test_upper
+This test is used to check if the given string is converted to uppercase or not. <br>
+The `assertEqual()` statement returns true if the string returned is in uppercase.
+- test_isupper
+This test is used to test the property of string which returns TRUE if the string is in uppercase else returns False. <br>
+The `assertTrue()` / `assertFalse()` statement is used for this verification.
+- test_strip
+This test is used to check if all chars passed in the function have been stripped from the string. <br>
+The `assertEqual()` statement returns true if the string is stripped and matches the given output.
+- test_split
+This test is used to check the split function of the string which splits the string through the argument passed in the function and returns the result as list. <br>
+The `assertEqual()` statement returns true in this case if the result matches the given output.
+
