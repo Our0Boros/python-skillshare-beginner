@@ -136,5 +136,6 @@ This test is used to check the split function of the string which splits the str
 The `assertEqual()` statement returns true in this case if the result matches the given output.
 
 #### For more info about unittest check in https://www.tutorialspoint.com/
-1. [TestCase Class](https://www.tutorialspoint.com/unittest_framework/unittest_framework_api.htm)
-2. https://www.tutorialspoint.com/unittest_framework/unittest_framework_assertion.htm
+1. [Unittest Framework Api](https://www.tutorialspoint.com/unittest_framework/unittest_framework_api.htm)
+2. [Unittest Framework Assertion](https://www.tutorialspoint.com/unittest_framework/unittest_framework_assertion.htm)
+3. in IDLE check `help(unittest.TestCase)` after importing `unittest`
