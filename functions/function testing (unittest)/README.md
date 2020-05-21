@@ -40,4 +40,4 @@ This test() method will fail if TRUE is ever FALSE.
 if __name__ == '__main__':
     unittest.main()
 ```
-- The last block helps to run the test by running the file through the command line.
+- This last block helps to run the test by running the file through the command line.
