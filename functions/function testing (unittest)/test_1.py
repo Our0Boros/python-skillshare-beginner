@@ -14,7 +14,8 @@ class CircleAreaTest(unittest.TestCase):
 	def test_circle_area(self):
 		self.assertEqual(circle_area(2), pi*2**2)
 
-unittest.main()
+if __name__ == '__main__':
+	unittest.main()
 
 
 
